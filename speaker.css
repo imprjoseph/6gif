@@ -2,7 +2,13 @@
   position: relative;
 }
 
+.speaker-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 18px 14px;
+}
+
 .speaker-visual {
+  height: 230px;
   padding: 0;
   align-items: stretch;
   background: #102a83;
@@ -13,4 +19,40 @@
   height: 100%;
   object-fit: cover;
   object-position: center 24%;
+}
+
+.speaker-grid h3 {
+  margin: 14px 0 6px;
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+.speaker-grid p {
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+@media (max-width: 1050px) {
+  .speaker-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .speaker-visual {
+    height: 280px;
+  }
+}
+
+@media (max-width: 700px) {
+  .speaker-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .speaker-visual {
+    height: 320px;
+  }
+
+  .speaker-grid h3 {
+    font-size: 23px;
+  }
 }
