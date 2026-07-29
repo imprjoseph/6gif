@@ -1,0 +1,19 @@
+.visual-hero {
+  min-height: 0;
+}
+
+.hero-banner {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (max-width: 700px) {
+  .hero-banner {
+    height: auto;
+    min-height: 0;
+    object-fit: contain;
+  }
+}
