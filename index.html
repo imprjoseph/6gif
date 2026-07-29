@@ -1,113 +1,213 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="2026 6G Summit Taipei, September 23–24, 2026 at TICC."><title>2026 6G Summit Taipei</title><style>
-:root{--navy:#073676;--navy2:#021f4d;--blue:#188ed8;--red:#e52521;--ink:#17324f;--muted:#60748b;--line:#dce6f0;--soft:#f5f9fd;--max:1240px;--shadow:0 10px 30px rgba(7,54,118,.1)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Noto Sans",sans-serif;color:var(--ink);line-height:1.65;background:#fff}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.container{width:min(var(--max),calc(100% - 48px));margin:auto}.section{padding:72px 0}.soft{background:linear-gradient(#f9fcff,#eef5fb)}.eyebrow{font-size:14px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:8px}.title{margin:0 0 34px;font-size:42px;line-height:1.15;color:var(--navy);text-align:center}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border-radius:9px;background:var(--red);color:#fff;font-weight:800;transition:.25s;box-shadow:0 10px 24px rgba(229,37,33,.24)}.btn:hover{transform:translateY(-2px)}
-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:10px;color:var(--navy);font-weight:800}.brand img{width:92px;height:48px;object-fit:contain}.links{display:flex;gap:22px;font-size:14px;font-weight:700}
-.hero{position:relative;background:#eaf3ff;overflow:hidden}.hero>img{width:100%;height:auto}.countdown{position:absolute;right:3.5vw;bottom:3vw;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:12px;border-radius:14px;background:rgba(2,31,77,.82);backdrop-filter:blur(8px);color:#fff}.count-item{min-width:66px;text-align:center}.count-item strong{display:block;font-size:27px;line-height:1}.count-item span{font-size:10px;letter-spacing:.08em;text-transform:uppercase;opacity:.8}
-.partner-section{padding:34px 0;border-bottom:1px solid var(--line)}.partner-section h2{margin:0 0 22px;text-align:center;font-size:20px;letter-spacing:.1em;color:var(--navy)}.organizer-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;align-items:start;margin-bottom:28px;padding-bottom:28px;border-bottom:1px solid var(--line)}.partner-page{display:none}.partner-page.active{display:grid}.partner-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:18px;align-items:start;justify-content:center}.partner-page.tier-top{grid-template-columns:repeat(3,minmax(0,1fr))}.partner-page.tier-silver{grid-template-columns:repeat(2,minmax(0,220px))}.partner-page.tier-bronze{grid-template-columns:repeat(5,minmax(0,1fr))}.logo-block{text-align:center}.logo-frame{height:142px;display:flex;align-items:center;justify-content:center;padding:12px;border:1px solid #e4ebf3;border-radius:14px;background:#fff;overflow:hidden}.logo-frame img{width:100%;height:100%;object-fit:contain;object-position:center}.logo-label{margin-top:9px;font-size:12px;font-weight:800;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}.partner-controls{display:flex;justify-content:center;align-items:center;gap:16px;margin-top:24px}.partner-controls button{border:1px solid var(--line);background:#fff;color:var(--navy);padding:11px 18px;border-radius:999px;font-weight:800;cursor:pointer;transition:.2s}.partner-controls button:hover{background:var(--navy);color:#fff}.partner-controls button[disabled]{opacity:.35;cursor:not-allowed}.page-indicator{font-size:13px;font-weight:800;color:var(--muted);letter-spacing:.08em}
-.about{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:start}.about h2{margin:0 0 18px;font-size:42px;line-height:1.18;color:var(--navy)}.about p{margin:0 0 16px;font-size:16px;color:#40566f}.about-sessions{margin:4px 0 18px;padding:0;list-style:none;display:grid;gap:9px}.about-sessions li{padding:10px 14px;border-left:4px solid var(--blue);border-radius:0 8px 8px 0;background:#eef6fd;color:#31506f;font-size:15px;font-weight:700}.about-photo{width:100%;height:390px;object-fit:cover;border-radius:18px;box-shadow:var(--shadow)}.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:34px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.stat{padding:22px;text-align:center;border-right:1px solid var(--line)}.stat:last-child{border-right:0}.stat strong{display:block;font-size:34px;color:var(--blue);line-height:1}.stat span{display:block;margin-top:7px;font-size:13px;font-weight:700;color:var(--muted);text-transform:uppercase}
-.why-grid,.speaker-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.card{padding:25px 22px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow)}.card h3{margin:0 0 8px;font-size:20px;color:var(--navy)}.card p{margin:0;font-size:15px;color:var(--muted)}.num{width:48px;height:48px;display:grid;place-items:center;border-radius:13px;background:#e9f4ff;color:var(--blue);font-weight:800;margin-bottom:16px}.speaker{text-align:center}.speaker-mark{width:100px;height:100px;margin:0 auto 16px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#dceeff,#f2f8ff);color:var(--blue);font-size:28px;font-weight:800}
-.agenda{display:grid;grid-template-columns:1fr 1fr;gap:24px}.day{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;box-shadow:var(--shadow)}.day>h3{margin:0;padding:17px 20px;background:linear-gradient(120deg,#073676,#1267d8);color:#fff;text-align:center;font-size:18px}.session{padding:22px 24px}.session+ .session{border-top:1px solid var(--line)}.session h4{margin:0 0 14px;color:var(--navy);font-size:17px;letter-spacing:.02em;text-transform:none}.agenda-list{display:grid;gap:11px}.agenda-item{display:grid;grid-template-columns:82px 1fr;gap:14px;align-items:start}.agenda-time{font-size:13px;font-weight:800;color:var(--blue);white-space:nowrap}.agenda-topic{font-size:15px;color:#40566f}.agenda-topic strong{display:block;color:var(--ink);font-size:15px}.agenda-speaker{display:block;margin-top:4px;color:var(--muted);font-size:13px;line-height:1.45}.note{text-align:center;color:var(--muted);font-size:14px}
-.pricing-wrap{overflow-x:auto}table{width:100%;min-width:900px;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;box-shadow:var(--shadow)}th,td{padding:17px 18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}th:last-child,td:last-child{border-right:0}tr:last-child td{border-bottom:0}thead th{background:#f2f6fa;color:var(--navy)}thead th:nth-child(3){background:#5d3db1;color:#fff}thead th:nth-child(4){background:#0caaa2;color:#fff}td:first-child,th:first-child{text-align:left;font-weight:800}.price{display:block;font-size:23px;font-weight:800;color:var(--navy)}.sub{display:block;font-size:12px;color:var(--muted)}.member-note{margin-top:24px;padding:20px 22px;border-left:4px solid var(--blue);background:#fff;box-shadow:var(--shadow)}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026 6G Summit Taipei, September 23–24, 2026 at TICC.">
+  <title>2026 6G Summit Taipei</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="site-logo" href="#home"><img src="assets/6gif-logo.png" alt="6G Industry Forum"></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation">☰</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#themes">Themes</a>
+        <a href="#partners">Partners</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#venue">Venue</a>
+      </nav>
+      <a class="pill pill-light nav-register" href="registration.html">REGISTER NOW <span>→</span></a>
+    </div>
+  </header>
 
-.benefits-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px}
-.gift-showcase{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:26px}
-.gift-product{display:grid;grid-template-columns:220px 1fr;gap:22px;align-items:center;padding:22px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:var(--shadow)}
-.gift-product img{width:100%;height:210px;object-fit:contain;border-radius:12px;background:#fff}
-.gift-product h3{margin:0 0 8px;color:var(--navy);font-size:21px}
-.gift-product p{margin:0 0 8px;color:var(--muted);font-size:14px}
-.gift-spec{display:inline-flex;align-items:center;gap:7px;padding:7px 10px;border-radius:999px;background:#eef7ff;color:#31506f;font-size:12px;font-weight:800}
-.benefit-card{padding:24px 20px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow)}.benefit-card h3{margin:0 0 7px;font-size:18px;color:var(--navy)}.benefit-card p{margin:0;font-size:14px;color:var(--muted)}.benefit-icon{width:44px;height:44px;display:grid;place-items:center;margin-bottom:14px;border-radius:12px;background:#eaf4ff;color:var(--blue);font-weight:800}.gift-note{margin-top:20px;padding:18px 20px;border-radius:14px;background:#eef7ff;color:#31506f;font-size:14px}.size-guide{margin-top:28px;overflow-x:auto}.size-guide table{min-width:760px;box-shadow:none}.size-guide th,.size-guide td{padding:13px 14px;font-size:14px}.registration-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(280px,.75fr);gap:24px;align-items:start;margin-top:34px}.form-card,.includes-card{padding:30px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:var(--shadow)}.form-card{margin:0}.form-card h3,.includes-card h3{margin:0 0 8px;font-size:24px;color:var(--navy)}.form-card>p{margin:0 0 22px;color:var(--muted);font-size:15px}.registration-form{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:14px;font-weight:800;color:var(--ink)}.field input,.field select{width:100%;height:48px;padding:0 14px;border:1px solid #cfdce9;border-radius:9px;background:#fff;color:var(--ink);font:inherit;font-size:15px}.field input:focus,.field select:focus{outline:2px solid rgba(24,142,216,.2);border-color:var(--blue)}.form-actions{grid-column:1/-1;display:flex;justify-content:flex-end;margin-top:4px}.privacy-consent{grid-column:1/-1;display:flex;gap:11px;align-items:flex-start;padding:15px 16px;border:1px solid #d8e6f2;border-radius:10px;background:var(--soft);color:var(--muted);font-size:12px;line-height:1.55}.privacy-consent input{width:18px;height:18px;margin:2px 0 0;flex:0 0 18px;accent-color:var(--blue)}.privacy-consent strong{color:var(--ink)}.includes-list{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:15px}.includes-list li{display:flex;gap:10px;align-items:flex-start;color:#40566f}.includes-list li::before{content:"✓";width:24px;height:24px;flex:0 0 24px;display:grid;place-items:center;border-radius:50%;background:#e9f7ef;color:#16834b;font-size:14px;font-weight:900}
-.venue{display:grid;grid-template-columns:.85fr 1.15fr;gap:28px}.venue-info{padding:34px;border-radius:17px;background:linear-gradient(145deg,var(--navy2),#0c4eaa);color:#fff}.venue-info h2{font-size:34px;line-height:1.18}.map{width:100%;min-height:420px;border:0;border-radius:17px;box-shadow:var(--shadow)}.faq{display:grid;grid-template-columns:1fr 1fr;gap:18px}.faq article{padding:23px;border:1px solid var(--line);border-radius:15px;background:#fff}.faq h3{margin:0 0 7px;font-size:19px}.faq p{margin:0;color:var(--muted);font-size:15px}footer{padding:42px 0 24px;background:#021a43;color:#fff}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:30px}.footer-grid p,.footer-grid a{font-size:14px;color:#d8e6f8}.footer-organizer-logos{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}.footer-organizer-logo{width:118px;height:64px;display:flex;align-items:center;justify-content:center;padding:8px;border-radius:10px;background:#fff}.footer-organizer-logo img{width:100%;height:100%;object-fit:contain}.footer-bottom{margin-top:24px;padding-top:18px;border-top:1px solid rgba(255,255,255,.15);font-size:13px;color:#cbd8e8}.floating{position:fixed;right:18px;bottom:18px;z-index:40;border-radius:999px}.reveal{opacity:0;transform:translateY(20px);transition:.7s}.reveal.visible{opacity:1;transform:none}
-@media(max-width:980px){.links{display:none}.benefits-grid{grid-template-columns:repeat(2,1fr)}.gift-showcase,.registration-layout{grid-template-columns:1fr}.about,.venue{grid-template-columns:1fr}.why-grid,.speaker-grid{grid-template-columns:repeat(2,1fr)}.organizer-grid{grid-template-columns:repeat(4,1fr)}.partner-grid,.partner-page.tier-top,.partner-page.tier-bronze{grid-template-columns:repeat(3,1fr)}.agenda,.faq{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.countdown{position:static;width:max-content;margin:12px auto}}@media(max-width:620px){.benefits-grid,.registration-form{grid-template-columns:1fr}.gift-product{grid-template-columns:1fr}.gift-product img{height:240px}.field.full,.form-actions,.privacy-consent{grid-column:auto}.form-card,.includes-card{padding:22px 18px}.container{width:min(100% - 28px,var(--max))}.section{padding:54px 0}.title{font-size:32px}.organizer-grid,.partner-grid,.partner-page.tier-top,.partner-page.tier-silver,.partner-page.tier-bronze,.why-grid,.speaker-grid{grid-template-columns:1fr 1fr}.logo-frame{height:96px}.about h2{font-size:34px}.about-photo{height:270px}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.agenda-item{grid-template-columns:76px 1fr;gap:10px}.session{padding:19px 18px}}
-</style></head><body>
-<header><div class="container"><nav><a class="brand" href="#home"><img src="assets/6gif-logo.png" alt="6GIF"></a><div class="links"><a href="#about">ABOUT</a><a href="#why">WHY ATTEND</a><a href="#speakers">SPEAKERS</a><a href="#agenda">AGENDA</a><a href="#registration">REGISTRATION</a><a href="#venue">VENUE</a></div><a class="btn" href="#registration">REGISTER NOW</a></nav></div></header>
-<main><section class="hero" id="home"><img src="assets/banner.svg" alt="2026 6G Summit Taipei"><div class="countdown"><div class="count-item"><strong id="days">--</strong><span>Days</span></div><div class="count-item"><strong id="hours">--</strong><span>Hours</span></div><div class="count-item"><strong id="minutes">--</strong><span>Minutes</span></div><div class="count-item"><strong id="seconds">--</strong><span>Seconds</span></div></div></section>
-<section class="partner-section" id="partners"><div class="container"><h2>ORGANIZERS &amp; SPONSORS</h2>
-<div class="organizer-grid">
-<div class="logo-block"><div class="logo-frame"><img src="assets/6gif-logo.png" alt="6G Industry Forum"></div><div class="logo-label">Organizer</div></div>
-<div class="logo-block"><div class="logo-frame"><img src="assets/taics.svg" alt="TAICS"></div><div class="logo-label">Organizer</div></div>
-<div class="logo-block"><div class="logo-frame"><img src="assets/itri.svg" alt="Industrial Technology Research Institute"></div><div class="logo-label">Co-organizer</div></div>
-<div class="logo-block"><div class="logo-frame"><img src="assets/teema.svg" alt="Taiwan Electrical and Electronic Manufacturers' Association"></div><div class="logo-label">Co-organizer</div></div>
-</div>
-<div class="partner-page partner-grid tier-top active" data-partner-page="0">
-<div class="logo-block"><div class="logo-frame"><img src="assets/mediatek.svg" alt="MediaTek"></div><div class="logo-label">Gold Sponsor</div></div>
-<div class="logo-block"><div class="logo-frame"><img src="assets/cht-clean.png" alt="Chunghwa Telecom"></div><div class="logo-label">Gold Sponsor</div></div>
-<div class="logo-block"><div class="logo-frame"><img src="assets/fet-clean.png" alt="Far EasTone Telecommunications"></div><div class="logo-label">Gold Sponsor</div></div>
-</div>
-<div class="partner-page partner-grid tier-silver" data-partner-page="1">
-<div class="logo-block"><div class="logo-frame"><img src="assets/hwacom.svg" alt="Hwacom Systems"></div><div class="logo-label">Silver Sponsor</div></div>
-<div class="logo-block"><div class="logo-frame"><img src="assets/compal.svg" alt="Compal Electronics"></div><div class="logo-label">Silver Sponsor</div></div>
-</div>
-<div class="partner-page partner-grid tier-bronze" data-partner-page="2">
-<div class="logo-block"><div class="logo-frame"><img src="assets/keysight.svg" alt="Keysight Technologies"></div><div class="logo-label">Bronze Sponsor</div></div>
-<div class="logo-block"><div class="logo-frame"><img src="assets/inventec.svg" alt="Inventec"></div><div class="logo-label">Bronze Sponsor</div></div>
-<div class="logo-block"><div class="logo-frame"><img src="assets/auden.svg" alt="Auden Techno"></div><div class="logo-label">Bronze Sponsor</div></div>
-<div class="logo-block"><div class="logo-frame"><img src="assets/rohde-schwarz.svg" alt="Rohde &amp; Schwarz Taiwan"></div><div class="logo-label">Bronze Sponsor</div></div>
-<div class="logo-block"><div class="logo-frame"><img src="assets/pegatron.svg" alt="Pegatron"></div><div class="logo-label">Bronze Sponsor</div></div>
-</div>
-<div class="partner-controls"><button id="partnerPrev" type="button" disabled>View Previous Page</button><span class="page-indicator" id="partnerPageIndicator">Page 1 of 3</span><button id="partnerNext" type="button">View Next Page</button></div>
-</div></section>
-<section class="section soft reveal" id="about"><div class="container"><div class="about"><div><div class="eyebrow">About the Summit</div><h2>About 2026 6G Summit Taipei</h2><p>As the global telecommunications industry stands at the threshold of a new technological era, the 2026 6G Summit Taipei convenes leading voices from academia, industry, and government to chart the path toward an AI-Native 6G future. Taking place on September 23–24, 2026, at the Taipei International Convention Center, the summit examines how artificial intelligence will reshape the sixth generation of wireless communications. The event will spotlight cutting-edge developments and challenges poised to transform key sectors in the AI-native 6G era.</p><ul class="about-sessions"><li>Session 1: AI-Driven 6G Era in 2030s</li><li>Session 2: 6G Key Drivers: Spectrum, ISAC, NTN, and Low Altitude Economy</li><li>Session 3: 6G Standards and Technology Development</li><li>Session 4: 6G Industry Development</li></ul><p>Day One explores AI-driven connectivity’s impact on society and industry, and Day Two turns to standards development and industrial deployment, addressing global 6G direction and native AI integration—culminating in a showcase of 6G pilot projects from Taiwan and beyond.</p><p>Distinguished speakers from EU, USA, Japan, Korean and local Taiwan will tackle the technical, regulatory, and commercial challenges of bringing 6G from vision to reality, reinforcing Taiwan’s position at the forefront of next-generation communications innovation.</p></div><img class="about-photo" src="assets/about.svg" alt="6G conference audience"></div><div class="stats"><div class="stat"><strong data-count="2">0</strong><span>Summit Days</span></div><div class="stat"><strong data-count="20">0+</strong><span>Speakers</span></div><div class="stat"><strong data-count="10">0+</strong><span>Topics</span></div><div class="stat"><strong data-count="250">0+</strong><span>Participants</span></div></div></div></section>
-<section class="section reveal" id="why"><div class="container"><div class="eyebrow" style="text-align:center">Why Attend</div><h2 class="title">Where the 6G ecosystem connects</h2><div class="why-grid"><article class="card"><div class="num">01</div><h3>International Networking</h3><p>Meet leaders from government, industry, academia and global standards communities.</p></article><article class="card"><div class="num">02</div><h3>6G Standards</h3><p>Understand international standards, spectrum and interoperability.</p></article><article class="card"><div class="num">03</div><h3>AI &amp; Future Networks</h3><p>Explore AI-native networks, sensing, edge intelligence and applications.</p></article><article class="card"><div class="num">04</div><h3>Business Opportunities</h3><p>Discover partnerships and opportunities across the 6G value chain.</p></article></div></div></section>
-<section class="section soft reveal" id="speakers"><div class="container"><div class="eyebrow" style="text-align:center">Featured Speakers</div><h2 class="title">Global voices shaping 6G</h2><div class="speaker-grid"><article class="card speaker"><div class="speaker-mark">6G</div><h3>Keynote Speaker</h3><p>To be announced</p></article><article class="card speaker"><div class="speaker-mark">6G</div><h3>Industry Leader</h3><p>To be announced</p></article><article class="card speaker"><div class="speaker-mark">6G</div><h3>Policy Expert</h3><p>To be announced</p></article><article class="card speaker"><div class="speaker-mark">6G</div><h3>Technology Pioneer</h3><p>To be announced</p></article></div></div></section>
-<section class="section reveal" id="agenda"><div class="container"><div class="eyebrow" style="text-align:center">Two-Day Program</div><h2 class="title">Agenda Highlights</h2><div class="agenda">
-<article class="day"><h3>DAY 1 · SEPTEMBER 23, 2026</h3>
-<div class="session"><h4>Opening Program</h4><div class="agenda-list">
-<div class="agenda-item"><div class="agenda-time">09:00–09:30</div><div class="agenda-topic"><strong>Welcome Speech &amp; Opening Ceremony</strong><span class="agenda-speaker">Representatives from 6GIF, Ministry of Economic Affairs (MOEA), and DG Connect, European Commission</span></div></div>
-<div class="agenda-item"><div class="agenda-time">09:30–09:40</div><div class="agenda-topic"><strong>Group Photo</strong></div></div>
-</div></div>
-<div class="session"><h4>Session 1 · AI-Driven 6G Era in 2030s</h4><div class="agenda-list">
-<div class="agenda-item"><div class="agenda-time">09:40–10:20</div><div class="agenda-topic"><strong>S1-1 Keynote: 6G Impacts to the Society and Industry beyond 2030</strong><span class="agenda-speaker">Representative from SNS JU</span></div></div>
-<div class="agenda-item"><div class="agenda-time">10:20–11:00</div><div class="agenda-topic"><strong>S1-2 Keynote: Migration towards 6G, NOW!</strong><span class="agenda-speaker">Representative from Chunghwa Telecom</span></div></div>
-<div class="agenda-item"><div class="agenda-time">11:00–11:20</div><div class="agenda-topic"><strong>Coffee Break</strong></div></div>
-<div class="agenda-item"><div class="agenda-time">11:20–12:00</div><div class="agenda-topic"><strong>S1-3 Keynote: AI Enabled 6G for Future Human Life</strong><span class="agenda-speaker">Prof. Akihiro Nakao, XGMF</span></div></div>
-<div class="agenda-item"><div class="agenda-time">12:00–12:40</div><div class="agenda-topic"><strong>S1-4 Panel: Beyond Connectivity — How AI plus 6G Will Change Human Life in 2030s?</strong><span class="agenda-speaker">Moderator: Doug Caster, NGA – SG Chair<br>Panelists: SNS JU, Akihiro Nakao (XGMF), Nokia, and Rohde &amp; Schwarz</span></div></div>
-<div class="agenda-item"><div class="agenda-time">12:40–14:00</div><div class="agenda-topic"><strong>Lunch</strong></div></div>
-</div></div>
-<div class="session"><h4>Session 2 · 6G Key Drivers: Spectrum, ISAC, NTN, and Low Altitude Economy</h4><div class="agenda-list">
-<div class="agenda-item"><div class="agenda-time">14:00–14:40</div><div class="agenda-topic"><strong>S2-1 Keynote: Shaping the Future of 6G Networks</strong><span class="agenda-speaker">Representative from Far EasTone</span></div></div>
-<div class="agenda-item"><div class="agenda-time">14:40–15:10</div><div class="agenda-topic"><strong>S2-2: 6G Spectrum</strong><span class="agenda-speaker">Kentaro Sakata, SoftBank</span></div></div>
-<div class="agenda-item"><div class="agenda-time">15:10–15:40</div><div class="agenda-topic"><strong>S2-3: ISAC Applications</strong><span class="agenda-speaker">Prof. Haibin Zhang, TNO</span></div></div>
-<div class="agenda-item"><div class="agenda-time">15:40–16:00</div><div class="agenda-topic"><strong>Coffee Break</strong></div></div>
-<div class="agenda-item"><div class="agenda-time">16:00–16:30</div><div class="agenda-topic"><strong>S2-4: NTN With or Without 6G?</strong><span class="agenda-speaker">Dr. Alessandro Vanelli-Coralli, Università di Bologna</span></div></div>
-<div class="agenda-item"><div class="agenda-time">16:30–17:00</div><div class="agenda-topic"><strong>S2-5: 6G Low Altitude Economy</strong><span class="agenda-speaker">Kimi Imamura, Sharp</span></div></div>
-<div class="agenda-item"><div class="agenda-time">17:00–17:50</div><div class="agenda-topic"><strong>S2-6 Panel: What Are the Key Drivers of Upcoming 6G?</strong><span class="agenda-speaker">Moderator: James Shue, Pegatron<br>Panelists: Far EasTone, Kentaro Sakata (SoftBank), Haibin Zhang (TNO), Kimi Imamura (Sharp), and Alessandro Vanelli-Coralli (Università di Bologna)</span></div></div>
-<div class="agenda-item"><div class="agenda-time">18:30–20:30</div><div class="agenda-topic"><strong>Gala Dinner</strong></div></div>
-</div></div></article>
-<article class="day"><h3>DAY 2 · SEPTEMBER 24, 2026</h3>
-<div class="session"><h4>Session 3 · 6G Standards and Technology Development</h4><div class="agenda-list">
-<div class="agenda-item"><div class="agenda-time">09:00–09:40</div><div class="agenda-topic"><strong>S3-1 Keynote: Global 6G Industry</strong><span class="agenda-speaker">Representative from MediaTek</span></div></div>
-<div class="agenda-item"><div class="agenda-time">09:40–10:20</div><div class="agenda-topic"><strong>S3-2 Keynote: A Critical View of 6G Technical Enablers — What Will Really Be New?</strong><span class="agenda-speaker">Prof. Harald Haas, University of Cambridge / Founder and CSO, pureLiFi Ltd.</span></div></div>
-<div class="agenda-item"><div class="agenda-time">10:20–10:50</div><div class="agenda-topic"><strong>S3-3: AI for 6G Technology</strong><span class="agenda-speaker">Dr. Quentin Lampin, (Co)Director, Orange–CEA AI Native Lab</span></div></div>
-<div class="agenda-item"><div class="agenda-time">10:50–11:10</div><div class="agenda-topic"><strong>Coffee Break</strong></div></div>
-<div class="agenda-item"><div class="agenda-time">11:10–11:40</div><div class="agenda-topic"><strong>S3-4: AI-Native RAN</strong><span class="agenda-speaker">Kuntal Chowdhury, NVIDIA</span></div></div>
-<div class="agenda-item"><div class="agenda-time">11:40–12:30</div><div class="agenda-topic"><strong>S3-5 Panel: Is 6G the Last 3GPP Standard?</strong><span class="agenda-speaker">Moderator: I-Kang Fu, MediaTek<br>Panelists: Harald Haas (TITAN), Quentin Lampin (Orange), Kuntal Chowdhury (NVIDIA), and Abhumanyu Gosain (OUSD FutureG)</span></div></div>
-<div class="agenda-item"><div class="agenda-time">12:30–14:00</div><div class="agenda-topic"><strong>Lunch</strong></div></div>
-</div></div>
-<div class="session"><h4>Session 4 · 6G Industry Development</h4><div class="agenda-list">
-<div class="agenda-item"><div class="agenda-time">14:00–14:40</div><div class="agenda-topic"><strong>S4-1 Keynote: Secrets of AI Powered 6G</strong><span class="agenda-speaker">Dr. Calvanese Strinati Emilio, CEA-Leti</span></div></div>
-<div class="agenda-item"><div class="agenda-time">14:40–15:10</div><div class="agenda-topic"><strong>S4-2 Keynote: Innovative 6G Applications and Emerging Scenarios in North America</strong><span class="agenda-speaker">Doug Caster, NGA – SG Chair</span></div></div>
-<div class="agenda-item"><div class="agenda-time">15:10–15:40</div><div class="agenda-topic"><strong>S4-3: 6G Hyper Network Preparation in Korea</strong><span class="agenda-speaker">Prof. HyeonWoo Lee, 6G Forum</span></div></div>
-<div class="agenda-item"><div class="agenda-time">15:40–16:10</div><div class="agenda-topic"><strong>Coffee Break</strong></div></div>
-<div class="agenda-item"><div class="agenda-time">16:10–16:40</div><div class="agenda-topic"><strong>S4-4: 6G Pilot Showcases in Taiwan</strong><span class="agenda-speaker">Dr. Pang-An Ting, ITRI</span></div></div>
-<div class="agenda-item"><div class="agenda-time">16:40–17:30</div><div class="agenda-topic"><strong>S4-5 Panel: The Killer PoC Before 6G Day-1 Launch</strong><span class="agenda-speaker">Moderator: Prof. Hungyu Wei, NTU<br>Panelists: Doug Caster (NGA – SG Chair), Calvanese Strinati Emilio (CEA-Leti), and Pang-An Ting (ITRI)</span></div></div>
-<div class="agenda-item"><div class="agenda-time">17:30</div><div class="agenda-topic"><strong>End of the Summit</strong></div></div>
-</div></div></article>
-</div><p class="note">Program and speakers are subject to change.</p></div></section>
-<section class="section soft reveal" id="registration"><div class="container"><div class="eyebrow" style="text-align:center">Conference Passes</div><h2 class="title">Registration</h2><div class="pricing-wrap"><table><thead><tr><th>Pass Option</th><th>Regular Pass</th><th>6GIF Member Pass</th><th>Early Bird Pass</th></tr></thead><tbody><tr><td>Conference Only</td><td><span class="price">NT$10,000</span><span class="sub">Two-day conference</span></td><td><span class="price">NT$8,000</span><span class="sub">Eligible members</span></td><td><span class="price">NT$8,000</span><span class="sub">Before August 30</span></td></tr><tr><td>Conference + VIP Gala Dinner</td><td><span class="price">NT$13,000</span><span class="sub">Includes dinner</span></td><td><span class="price">NT$10,000</span><span class="sub">Member bundle</span></td><td><span class="price">NT$10,000</span><span class="sub">Early bird bundle</span></td></tr><tr><td>Conference Sessions</td><td>Included</td><td>Included</td><td>Included</td></tr><tr><td>Lunch &amp; Coffee Breaks</td><td>Included</td><td>Included</td><td>Included</td></tr><tr><td>Official Summit Polo Shirt</td><td>Included</td><td>Included</td><td>Included</td></tr><tr><td>Official Summit Backpack</td><td>Included</td><td>Included</td><td>Included</td></tr><tr><td></td><td><a class="btn" href="#registration-form">REGISTER NOW</a></td><td><a class="btn" href="#registration-form">MEMBER REGISTRATION</a></td><td><a class="btn" href="#registration-form">REGISTER EARLY</a></td></tr></tbody></table></div><div class="member-note"><strong>Complimentary tickets for 6GIF members:</strong> each eligible member organization may receive two complimentary VIP passes. Please contact the 6GIF Secretariat for the promotional code.</div>
-<div class="eyebrow" style="text-align:center;margin-top:50px">Registration Benefits</div><h2 class="title" style="font-size:34px">What Your Pass Includes</h2><div class="benefits-grid"><article class="benefit-card"><div class="benefit-icon">01</div><h3>Full Conference Access</h3><p>Admission to all keynote speeches, panel discussions, technical sessions and the exhibition area.</p></article><article class="benefit-card"><div class="benefit-icon">02</div><h3>Meals &amp; Refreshments</h3><p>Lunch and scheduled coffee breaks on both conference days.</p></article><article class="benefit-card"><div class="benefit-icon">03</div><h3>Official Summit Polo Shirt</h3><p>One official 2026 6G Summit Taipei polo shirt. Please select your preferred size during registration.</p></article><article class="benefit-card"><div class="benefit-icon">04</div><h3>Official Summit Backpack</h3><p>One official conference backpack, together with summit materials, available while supplies last.</p></article></div><div class="gift-showcase">
-<article class="gift-product">
-<img src="assets/backpack.webp" alt="Official summit backpack">
-<div><div class="eyebrow">Registration Gift</div><h3>Official Summit Backpack</h3><p>A practical large-capacity backpack suitable for a laptop, tablet and daily essentials.</p><span class="gift-spec">Approx. 31 × 45 × 13 cm</span></div>
-</article>
-<article class="gift-product">
-<img src="assets/polo-shirt-gray.webp" alt="Dark gray cotton pique short-sleeve polo shirt">
-<div><div class="eyebrow">Registration Gift</div><h3>Cotton Piqué Polo Shirt</h3><p>One short-sleeve cotton piqué polo shirt. Please select your preferred size during registration.</p><span class="gift-spec">Color: Dark Gray</span></div>
-</article>
-</div>
-<div class="gift-note"><strong>Gift notice:</strong> Polo shirt sizes and backpack quantities are subject to availability. Product appearance, color and specifications may vary slightly from the reference images. The organizer may provide an equivalent replacement item when necessary.</div>
-<div class="size-guide"><h3 style="color:var(--navy);font-size:22px">Polo Shirt Size (cm)</h3><table><thead><tr><th>Size</th><th>Recommended Height</th><th>Neck</th><th>Sleeve</th><th>Chest</th><th>Waist</th></tr></thead><tbody><tr><td>S</td><td>165–175</td><td>~38</td><td>~80.5</td><td>80–88</td><td>68–76</td></tr><tr><td>M</td><td>165–175</td><td>~40</td><td>~83</td><td>88–96</td><td>76–84</td></tr><tr><td>L</td><td>165–175</td><td>~42</td><td>~85.5</td><td>96–104</td><td>84–92</td></tr><tr><td>XL</td><td>175–185</td><td>~44</td><td>~88</td><td>104–112</td><td>92–100</td></tr><tr><td>XXL</td><td>175–185</td><td>~46</td><td>~90</td><td>112–120</td><td>100–108</td></tr></tbody></table><p class="note" style="text-align:left">Unit: cm. Measurements are based on the provided size chart and include sizes S–XXL only.</p></div>
-<div class="registration-layout" id="registration-form"><div class="form-card"><h3>Registration Form</h3><p>Please complete the following information. Fields marked with an asterisk are required.</p><form class="registration-form" action="#" method="post"><div class="field"><label for="name">Full Name *</label><input id="name" name="name" type="text" required autocomplete="name"></div><div class="field"><label for="email">Email Address *</label><input id="email" name="email" type="email" required autocomplete="email"></div><div class="field"><label for="phone">Mobile Number *</label><input id="phone" name="phone" type="tel" required autocomplete="tel"></div><div class="field"><label for="company">Company / Organization *</label><input id="company" name="company" type="text" required autocomplete="organization"></div><div class="field"><label for="title">Job Title *</label><input id="title" name="title" type="text" required autocomplete="organization-title"></div><div class="field"><label for="country">Country / Region *</label><input id="country" name="country" type="text" required autocomplete="country-name"></div><div class="field full"><label for="membership-status">6GIF Membership Status *</label><select id="membership-status" name="membership_status" required><option value="">Please select</option><option value="member">Yes, my organization is a 6GIF member</option><option value="non-member">No, my organization is not a 6GIF member</option></select></div><div class="field full"><label for="registration-option">Registration Option *</label><select id="registration-option" name="registration_option" required><option value="">Please select</option><option value="conference-only">Conference Only (No Gala Dinner)</option><option value="conference-and-gala">Conference + VIP Gala Dinner</option></select></div><div class="field"><label for="invoice-tax-id">Invoice Tax ID (8-digit GUI Number)</label><input id="invoice-tax-id" name="invoice_tax_id" type="text" inputmode="numeric" pattern="[0-9]{8}" maxlength="8" autocomplete="off"></div><div class="field"><label for="invoice-company">Invoice Company Name</label><input id="invoice-company" name="invoice_company_name" type="text" autocomplete="organization"></div><div class="field"><label for="diet">Dietary Preference</label><select id="diet" name="diet"><option value="">Please select</option><option value="regular">Regular</option><option value="vegetarian">Vegetarian</option><option value="no-meal">No Meal</option></select></div><div class="field"><label for="shirt">Polo Shirt Size (S / M / L / XL / XXL)</label><select id="shirt" name="shirt"><option value="">Please select</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select></div><label class="privacy-consent" for="privacy-consent"><input id="privacy-consent" name="privacy_consent" type="checkbox" required><span><strong>Personal Data Collection and Use Notice *</strong><br>I have read and agree to this notice. I consent to the organizer collecting and using my personal data for registration, payment and invoicing, event administration, participant communications, access control, and related event services. My data will be retained only for the period required by applicable law and legitimate event operations, and will not be disclosed to unrelated third parties except where required by law or to service providers necessary for the event. I may contact the organizer to request access to, correction of, or deletion of my personal data.</span></label><div class="form-actions"><button class="btn" type="submit">SUBMIT REGISTRATION</button></div></form></div><aside class="includes-card"><h3>Registration Includes</h3><ul class="includes-list"><li>Full Conference Access</li><li>Lunch &amp; Coffee Breaks</li><li>Networking Reception</li><li>Official Summit Backpack</li><li>Registration Gift</li><li>Conference Badge</li></ul></aside></div></div></section>
-<section class="section reveal" id="venue"><div class="container venue"><div class="venue-info"><div class="eyebrow" style="color:#83ddff">Venue &amp; Transportation</div><h2>Taipei International Convention Center</h2><p>1, Hsin-Yi Road, Section 5, Taipei 11049, Taiwan</p><p><strong>MRT:</strong> Take the Tamsui–Xinyi Line (Red Line) to Taipei 101 / World Trade Center Station and use Exit 1.</p><a class="btn" href="https://maps.google.com/?q=Taipei+International+Convention+Center" target="_blank">OPEN IN GOOGLE MAPS</a></div><iframe class="map" title="Venue map" src="https://www.google.com/maps?q=Taipei%20International%20Convention%20Center&output=embed" loading="lazy"></iframe></div></section>
-<section class="section soft reveal"><div class="container"><h2 class="title">Frequently Asked Questions</h2><div class="faq"><article><h3>How can I register?</h3><p>Select a pass category and choose conference-only or conference plus VIP Gala Dinner.</p></article><article><h3>What is included?</h3><p>All passes include conference sessions, exhibition access, lunch and coffee breaks.</p></article><article><h3>Will interpretation be provided?</h3><p>Bilingual support arrangements will be announced with the confirmed program.</p></article><article><h3>What is the refund policy?</h3><p>Cancellation and refund terms will be shown during registration.</p></article></div></div></section></main>
-<a class="btn floating" href="#registration">REGISTER NOW</a><footer><div class="container"><div class="footer-grid"><div><h3>2026 6G Summit Taipei</h3><p>September 23–24, 2026<br>Taipei International Convention Center</p></div><div><h3>Organizers</h3><div class="footer-organizer-logos"><div class="footer-organizer-logo"><img src="assets/6gif-logo.png" alt="6G Industry Forum"></div><div class="footer-organizer-logo"><img src="assets/taics.svg" alt="TAICS"></div><div class="footer-organizer-logo"><img src="assets/teema.svg" alt="Taiwan Electrical and Electronic Manufacturers' Association"></div></div></div><div><h3>Information</h3><p><a href="#registration">Registration</a><br><a href="#venue">Venue</a><br><a href="#">Privacy Policy</a></p></div></div><div class="footer-bottom">© 2026 6G Summit Taipei. All rights reserved.</div></div></footer>
-<script>let partnerPage=0,partnerTimer;const partnerPages=[...document.querySelectorAll('[data-partner-page]')],partnerPrev=document.getElementById('partnerPrev'),partnerNext=document.getElementById('partnerNext'),partnerIndicator=document.getElementById('partnerPageIndicator'),partnerSection=document.getElementById('partners');function showPartnerPage(index){partnerPage=(index+partnerPages.length)%partnerPages.length;partnerPages.forEach((page,i)=>page.classList.toggle('active',i===partnerPage));partnerPrev.disabled=partnerPage===0;partnerNext.disabled=partnerPage===partnerPages.length-1;partnerIndicator.textContent=`Page ${partnerPage+1} of ${partnerPages.length}`}function stopPartnerCarousel(){clearInterval(partnerTimer)}function startPartnerCarousel(){stopPartnerCarousel();partnerTimer=setInterval(()=>showPartnerPage(partnerPage+1),5000)}partnerPrev.addEventListener('click',()=>{showPartnerPage(partnerPage-1);startPartnerCarousel()});partnerNext.addEventListener('click',()=>{showPartnerPage(partnerPage+1);startPartnerCarousel()});partnerSection.addEventListener('mouseenter',stopPartnerCarousel);partnerSection.addEventListener('mouseleave',startPartnerCarousel);partnerSection.addEventListener('focusin',stopPartnerCarousel);partnerSection.addEventListener('focusout',e=>{if(!partnerSection.contains(e.relatedTarget))startPartnerCarousel()});document.addEventListener('visibilitychange',()=>document.hidden?stopPartnerCarousel():startPartnerCarousel());showPartnerPage(0);startPartnerCarousel();const target=new Date('2026-09-23T09:00:00+08:00').getTime();function tick(){const d=Math.max(0,target-Date.now());days.textContent=Math.floor(d/86400000);hours.textContent=String(Math.floor(d%86400000/3600000)).padStart(2,'0');minutes.textContent=String(Math.floor(d%3600000/60000)).padStart(2,'0');seconds.textContent=String(Math.floor(d%60000/1000)).padStart(2,'0')}tick();setInterval(tick,1000);const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('visible')),{threshold:.12});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));document.querySelectorAll('[data-count]').forEach(el=>{const max=+el.dataset.count;let n=0;const step=Math.max(1,Math.ceil(max/40));const obs=new IntersectionObserver(es=>{if(!es[0].isIntersecting)return;const t=setInterval(()=>{n=Math.min(max,n+step);el.textContent=n+(max>2?'+':'');if(n>=max)clearInterval(t)},30);obs.disconnect()},{threshold:.6});obs.observe(el)});</script></body></html>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-orb hero-orb-one"></div><div class="hero-orb hero-orb-two"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <div class="hero-kicker">TOWARDS AI-NATIVE 6G ERA</div>
+        <h1><span>2026</span> 6G SUMMIT<br>TAIPEI</h1>
+        <div class="date-pill">23–24 SEPTEMBER 2026 <b>/</b> TAIPEI, TAIWAN</div>
+        <div class="hero-actions">
+          <a class="pill pill-pink" href="registration.html">REGISTER NOW <span>→</span></a>
+          <a class="text-link" href="#agenda">VIEW AGENDA ↓</a>
+        </div>
+      </div>
+      <div class="hero-hosts">
+        <div><span>Organized by</span><div class="hero-logos"><img src="assets/6gif-logo.png" alt="6GIF"><img src="assets/taics.svg" alt="TAICS"></div></div>
+        <div><span>Co-organized by</span><div class="hero-logos"><img src="assets/itri.svg" alt="ITRI"><img src="assets/teema.svg" alt="TEEMA"></div></div>
+      </div>
+    </section>
+
+    <section class="intro section-pad" id="about">
+      <div class="container split">
+        <div>
+          <p class="section-label">EVENT OVERVIEW</p>
+          <h2>Shaping the path toward an <em>AI-Native 6G</em> future</h2>
+        </div>
+        <div class="intro-copy">
+          <p>As the global telecommunications industry stands at the threshold of a new technological era, the 2026 6G Summit Taipei convenes leading voices from academia, industry, and government to chart the path toward an AI-Native 6G future.</p>
+          <p>Taking place on September 23–24, 2026, at the Taipei International Convention Center, the summit examines how artificial intelligence will reshape the sixth generation of wireless communications and transform key sectors.</p>
+          <a class="pill pill-dark" href="#themes">EXPLORE THE PROGRAM <span>→</span></a>
+        </div>
+      </div>
+      <div class="container metrics">
+        <div><strong>2</strong><span>Summit Days</span></div>
+        <div><strong>20+</strong><span>Speakers</span></div>
+        <div><strong>10+</strong><span>Topics</span></div>
+        <div><strong>250+</strong><span>Participants</span></div>
+      </div>
+    </section>
+
+    <section class="dark-section section-pad" id="themes">
+      <div class="container">
+        <p class="section-label label-pink">KEY THEMES</p>
+        <div class="section-heading-row"><h2>Conversations defining<br>the next connectivity era</h2><p>Two days of policy, technology and industry insight focused on moving 6G from vision toward implementation.</p></div>
+        <div class="theme-grid">
+          <article><span>01</span><h3>AI-Driven 6G Era in 2030s</h3><p>How AI-native connectivity will reshape society, industry and everyday life.</p></article>
+          <article><span>02</span><h3>Spectrum, ISAC, NTN &amp; Low Altitude Economy</h3><p>The enabling technologies and emerging markets driving 6G deployment.</p></article>
+          <article><span>03</span><h3>6G Standards &amp; Technology Development</h3><p>Global alignment, standards evolution and the technical foundations of 6G.</p></article>
+          <article><span>04</span><h3>6G Industry Development</h3><p>Pilot projects, commercial readiness and international industry cooperation.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners section-pad" id="partners">
+      <div class="container">
+        <p class="section-label">ORGANIZERS &amp; PARTNERS</p>
+        <h2>Building the 6G ecosystem together</h2>
+        <div class="partner-group">
+          <h3>Organizers &amp; Co-organizers</h3>
+          <div class="logo-grid fixed-logos">
+            <div><img src="assets/6gif-logo.png" alt="6GIF"><span>Organizer</span></div>
+            <div><img src="assets/taics.svg" alt="TAICS"><span>Organizer</span></div>
+            <div><img src="assets/itri.svg" alt="ITRI"><span>Co-organizer</span></div>
+            <div><img src="assets/teema.svg" alt="TEEMA"><span>Co-organizer</span></div>
+          </div>
+        </div>
+        <div class="partner-group sponsor-carousel">
+          <div class="carousel-head"><h3 id="sponsorTier">Gold Sponsors</h3><div class="carousel-controls"><button id="partnerPrev" type="button" aria-label="Previous sponsor tier">←</button><span id="partnerPageIndicator">1 / 3</span><button id="partnerNext" type="button" aria-label="Next sponsor tier">→</button></div></div>
+          <div class="partner-page active" data-tier="Gold Sponsors">
+            <div class="logo-grid gold-grid">
+              <div><img src="assets/mediatek.svg" alt="MediaTek"></div>
+              <div><img src="assets/cht-clean.png" alt="Chunghwa Telecom"></div>
+              <div><img src="assets/fet-clean.png" alt="Far EasTone"></div>
+            </div>
+          </div>
+          <div class="partner-page" data-tier="Silver Sponsors">
+            <div class="logo-grid silver-grid">
+              <div><img src="assets/hwacom.svg" alt="Hwacom"></div>
+              <div><img src="assets/compal.svg" alt="Compal"></div>
+            </div>
+          </div>
+          <div class="partner-page" data-tier="Bronze Sponsors">
+            <div class="logo-grid bronze-grid">
+              <div><img src="assets/keysight.svg" alt="Keysight"></div>
+              <div><img src="assets/inventec.svg" alt="Inventec"></div>
+              <div><img src="assets/auden.svg" alt="Auden"></div>
+              <div><img src="assets/rohde-schwarz.svg" alt="Rohde &amp; Schwarz"></div>
+              <div><img src="assets/pegatron.svg" alt="Pegatron"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="speaker-section section-pad" id="speakers">
+      <div class="container">
+        <p class="section-label label-pink">SPEAKERS INCLUDE</p>
+        <div class="section-heading-row light-heading"><h2>Global voices<br>shaping 6G</h2><p>Distinguished experts from Europe, North America, Japan, Korea and Taiwan will address the technical, regulatory and commercial path to 6G.</p></div>
+        <div class="speaker-grid">
+          <article><div class="speaker-visual">AH</div><h3>Prof. Harald Haas</h3><p>University of Cambridge<br>Founder &amp; CSO, pureLiFi</p></article>
+          <article><div class="speaker-visual">AN</div><h3>Prof. Akihiro Nakao</h3><p>XGMF</p></article>
+          <article><div class="speaker-visual">DC</div><h3>Doug Caster</h3><p>Next G Alliance<br>Steering Group Chair</p></article>
+          <article><div class="speaker-visual">PI</div><h3>Dr. Pang-An Ting</h3><p>Industrial Technology Research Institute</p></article>
+        </div>
+        <p class="program-note">Additional speakers and representatives will be announced as confirmations are completed.</p>
+      </div>
+    </section>
+
+    <section class="agenda-section section-pad" id="agenda">
+      <div class="container">
+        <p class="section-label">AGENDA</p>
+        <div class="section-heading-row"><h2>Two days of insight,<br>dialogue and action</h2><p>Program and speakers are subject to change.</p></div>
+        <div class="day-tabs" role="tablist"><button class="day-tab active" data-day="day1" type="button">DAY 1 <span>23 SEPTEMBER</span></button><button class="day-tab" data-day="day2" type="button">DAY 2 <span>24 SEPTEMBER</span></button></div>
+        <div class="agenda-day active" id="day1">
+          <div class="agenda-session"><h3>Opening Program</h3>
+            <div class="agenda-row"><time>09:00–09:30</time><div><b>Welcome Speech &amp; Opening Ceremony</b><span>Representatives from 6GIF, MOEA and DG Connect, European Commission</span></div></div>
+            <div class="agenda-row"><time>09:30–09:40</time><div><b>Group Photo</b></div></div>
+          </div>
+          <div class="agenda-session"><h3>Session 1 · AI-Driven 6G Era in 2030s</h3>
+            <div class="agenda-row"><time>09:40–10:20</time><div><b>6G Impacts to the Society and Industry beyond 2030</b><span>Representative from SNS JU</span></div></div>
+            <div class="agenda-row"><time>10:20–11:00</time><div><b>Migration towards 6G, NOW!</b><span>Representative from Chunghwa Telecom</span></div></div>
+            <div class="agenda-row break"><time>11:00–11:20</time><div><b>Coffee Break</b></div></div>
+            <div class="agenda-row"><time>11:20–12:00</time><div><b>AI Enabled 6G for Future Human Life</b><span>Prof. Akihiro Nakao, XGMF</span></div></div>
+            <div class="agenda-row"><time>12:00–12:40</time><div><b>Panel: Beyond Connectivity — How AI plus 6G Will Change Human Life in 2030s?</b><span>Moderator: Doug Caster, NGA – SG Chair</span></div></div>
+            <div class="agenda-row break"><time>12:40–14:00</time><div><b>Lunch</b></div></div>
+          </div>
+          <div class="agenda-session"><h3>Session 2 · Spectrum, ISAC, NTN, and Low Altitude Economy</h3>
+            <div class="agenda-row"><time>14:00–14:40</time><div><b>Shaping the Future of 6G Networks</b><span>Representative from Far EasTone</span></div></div>
+            <div class="agenda-row"><time>14:40–15:10</time><div><b>6G Spectrum</b><span>Kentaro Sakata, SoftBank</span></div></div>
+            <div class="agenda-row"><time>15:10–15:40</time><div><b>ISAC Applications</b><span>Prof. Haibin Zhang, TNO</span></div></div>
+            <div class="agenda-row break"><time>15:40–16:00</time><div><b>Coffee Break</b></div></div>
+            <div class="agenda-row"><time>16:00–16:30</time><div><b>NTN With or Without 6G?</b><span>Dr. Alessandro Vanelli-Coralli, Università di Bologna</span></div></div>
+            <div class="agenda-row"><time>16:30–17:00</time><div><b>6G Low Altitude Economy</b><span>Kimi Imamura, Sharp</span></div></div>
+            <div class="agenda-row"><time>17:00–17:50</time><div><b>Panel: What Are the Key Drivers of Upcoming 6G?</b><span>Moderator: James Shue, Pegatron</span></div></div>
+            <div class="agenda-row dinner"><time>18:30–20:30</time><div><b>Gala Dinner</b></div></div>
+          </div>
+        </div>
+        <div class="agenda-day" id="day2">
+          <div class="agenda-session"><h3>Session 3 · 6G Standards and Technology Development</h3>
+            <div class="agenda-row"><time>09:00–09:40</time><div><b>Global 6G Industry</b><span>Representative from MediaTek</span></div></div>
+            <div class="agenda-row"><time>09:40–10:20</time><div><b>A Critical View of 6G Technical Enablers — What Will Really Be New?</b><span>Prof. Harald Haas, University of Cambridge</span></div></div>
+            <div class="agenda-row"><time>10:20–10:50</time><div><b>AI for 6G Technology</b><span>Dr. Quentin Lampin, Orange–CEA AI Native Lab</span></div></div>
+            <div class="agenda-row break"><time>10:50–11:10</time><div><b>Coffee Break</b></div></div>
+            <div class="agenda-row"><time>11:10–11:40</time><div><b>AI-Native RAN</b><span>Kuntal Chowdhury, NVIDIA</span></div></div>
+            <div class="agenda-row"><time>11:40–12:30</time><div><b>Panel: Is 6G the Last 3GPP Standard?</b><span>Moderator: I-Kang Fu, MediaTek</span></div></div>
+            <div class="agenda-row break"><time>12:30–14:00</time><div><b>Lunch</b></div></div>
+          </div>
+          <div class="agenda-session"><h3>Session 4 · 6G Industry Development</h3>
+            <div class="agenda-row"><time>14:00–14:40</time><div><b>Secrets of AI Powered 6G</b><span>Dr. Calvanese Strinati Emilio, CEA-Leti</span></div></div>
+            <div class="agenda-row"><time>14:40–15:10</time><div><b>Innovative 6G Applications and Emerging Scenarios in North America</b><span>Doug Caster, NGA – SG Chair</span></div></div>
+            <div class="agenda-row"><time>15:10–15:40</time><div><b>6G Hyper Network Preparation in Korea</b><span>Prof. HyeonWoo Lee, 6G Forum</span></div></div>
+            <div class="agenda-row break"><time>15:40–16:10</time><div><b>Coffee Break</b></div></div>
+            <div class="agenda-row"><time>16:10–16:40</time><div><b>6G Pilot Showcases in Taiwan</b><span>Dr. Pang-An Ting, ITRI</span></div></div>
+            <div class="agenda-row"><time>16:40–17:30</time><div><b>Panel: The Killer PoC Before 6G Day-1 Launch</b><span>Moderator: Prof. Hungyu Wei, NTU</span></div></div>
+            <div class="agenda-row dinner"><time>17:30</time><div><b>End of the Summit</b></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="registration-cta">
+      <div class="container">
+        <p class="section-label label-pink">JOIN US IN TAIPEI</p>
+        <h2>Be part of the conversation<br>shaping tomorrow’s networks.</h2>
+        <a class="pill pill-light" href="registration.html">VIEW PASSES &amp; REGISTER <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="venue-section section-pad" id="venue">
+      <div class="container venue-grid">
+        <div><p class="section-label">VENUE</p><h2>Taipei International<br>Convention Center</h2><p>1, Hsin-Yi Road, Section 5<br>Taipei 11049, Taiwan</p><p><b>MRT</b><br>Take the Tamsui–Xinyi Line (Red Line) to Taipei 101 / World Trade Center Station, Exit 1.</p><a class="pill pill-dark" href="https://maps.google.com/?q=Taipei+International+Convention+Center" target="_blank" rel="noopener">OPEN GOOGLE MAPS <span>↗</span></a></div>
+        <iframe title="Taipei International Convention Center map" src="https://www.google.com/maps?q=Taipei%20International%20Convention%20Center&output=embed" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-main">
+      <div><img class="footer-logo" src="assets/6gif-logo.png" alt="6GIF"><p>2026 6G Summit Taipei<br>23–24 September 2026</p></div>
+      <div><h3>Explore</h3><a href="#about">About</a><a href="#partners">Partners</a><a href="#speakers">Speakers</a><a href="#agenda">Agenda</a></div>
+      <div><h3>Attend</h3><a href="registration.html">Registration</a><a href="#venue">Venue &amp; MRT</a><a href="registration.html#privacy">Privacy Notice</a></div>
+      <div><h3>Organizers</h3><div class="footer-logos"><img src="assets/taics.svg" alt="TAICS"><img src="assets/teema.svg" alt="TEEMA"></div></div>
+    </div>
+    <div class="container footer-bottom">© 2026 6G Summit Taipei. All rights reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
