@@ -1,0 +1,32 @@
+.speaker-grid article {
+  position: relative;
+}
+
+.speaker-visual {
+  padding: 0;
+  align-items: stretch;
+  background: #102a83;
+}
+
+.speaker-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 24%;
+}
+
+.speaker-placeholder-label {
+  position: absolute;
+  z-index: 2;
+  top: 34px;
+  left: 14px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(7, 20, 92, 0.88);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
