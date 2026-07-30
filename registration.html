@@ -38,7 +38,8 @@
             <p>Please complete the bilingual registration form. Fields marked with an asterisk are required.</p>
             <p><b>Registration includes</b><br>Full conference access, lunch and coffee breaks, networking reception, official summit backpack, registration gift and conference badge.</p>
           </aside>
-          <form class="registration-form" action="#" method="post">
+          <form class="registration-form" id="registration-form" action="https://script.google.com/macros/s/AKfycbyAfncCzzsRgJS-tfvsAJpa2BoVLeGrI8mWv20F7eXdibL5-7mxdHvvtj1o44QVNu1ouw/exec" method="post" target="registration-response">
+            <div class="website-field" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
             <div class="field"><label for="name">Full Name / 姓名 *</label><input id="name" name="name" type="text" required autocomplete="name"></div>
             <div class="field"><label for="email">Email Address / 電子郵件 *</label><input id="email" name="email" type="email" required autocomplete="email"></div>
             <div class="field"><label for="phone">Mobile Number / 行動電話 *</label><input id="phone" name="phone" type="tel" required autocomplete="tel"></div>
@@ -52,9 +53,13 @@
             <div class="field"><label for="diet">Dietary Preference / 飲食偏好</label><select id="diet" name="diet"><option value="">Please select / 請選擇</option><option value="regular">Regular / 葷食</option><option value="vegetarian">Vegetarian / 素食</option><option value="no-meal">No Meal / 不用餐</option></select></div>
             <div class="field"><label for="shirt">Polo Shirt Size / POLO 衫尺寸</label><select id="shirt" name="shirt"><option value="">Please select / 請選擇</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select></div>
             <div class="subtotal-box" aria-live="polite"><div><span>Estimated Subtotal / 費用小計</span><small id="subtotalNote">Select membership status and registration option / 請選擇會員身分及報名方案</small></div><strong id="subtotalAmount">NT$—</strong></div>
-            <label class="privacy-box" id="privacy" for="privacy-consent"><input id="privacy-consent" name="privacy_consent" type="checkbox" required><span><strong>Personal Data Collection and Use Notice / 個人資料蒐集與使用聲明 *</strong><br>I have read and agree to this notice. I consent to the organizer collecting and using my personal data for registration, payment and invoicing, event administration, participant communications, access control and related event services.<br>本人已閱讀並同意本聲明，並同意主辦單位為報名、付款與發票、活動行政、參與者聯繫、進場管理及相關活動服務之目的蒐集及使用本人個人資料。</span></label>
-            <div class="submit-row"><button class="pill pill-pink" type="submit">SUBMIT REGISTRATION / 送出報名 <span>→</span></button></div>
+            <label class="privacy-box" id="privacy" for="privacy-consent"><input id="privacy-consent" name="privacy_consent" type="checkbox" value="agreed" required><span><strong>Personal Data Collection and Use Notice / 個人資料蒐集與使用聲明 *</strong><br>I have read and agree to this notice. I consent to the organizer collecting and using my personal data for registration, payment and invoicing, event administration, participant communications, access control and related event services.<br>本人已閱讀並同意本聲明，並同意主辦單位為報名、付款與發票、活動行政、參與者聯繫、進場管理及相關活動服務之目的蒐集及使用本人個人資料。</span></label>
+            <div class="submit-row">
+              <p class="registration-status" id="registration-status" role="status" aria-live="polite"></p>
+              <button class="pill pill-pink" id="registration-submit" type="submit">SUBMIT REGISTRATION / 送出報名 <span>→</span></button>
+            </div>
           </form>
+          <iframe class="registration-response-frame" name="registration-response" title="Registration response"></iframe>
         </div>
         <section class="gift-panel">
           <p class="section-label">REGISTRATION GIFTS</p>
@@ -69,6 +74,6 @@
     </section>
   </main>
   <footer><div class="container footer-main"><div><img class="footer-logo" src="assets/6gif-logo.png" alt="6GIF"><p>2026 6G Summit Taipei<br>23–24 September 2026</p></div><div><h3>Event</h3><a href="index.html#about">About</a><a href="index.html#agenda">Agenda</a><a href="index.html#venue">Venue</a></div><div><h3>Registration</h3><a href="#privacy">Privacy Notice</a><a href="index.html">Back to Event Website</a></div><div><h3>Co-Organizers</h3><div class="footer-logos"><img src="assets/taics.svg" alt="TAICS"><img src="assets/teema.svg" alt="TEEMA"></div></div></div><div class="container footer-bottom">© 2026 6G Summit Taipei. All rights reserved.</div></footer>
-  <script src="script.js"></script>
+  <script src="script.js?v=20260730-2"></script>
 </body>
 </html>
