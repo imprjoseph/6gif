@@ -51,13 +51,13 @@
   position: absolute;
   z-index: 2;
   top: 72%;
-  left: 48%;
+  left: 50%;
   display: grid;
   gap: 4px;
   width: min(520px, 26vw);
   padding: 15px 30px 18px;
   transform: translate(-50%, -50%);
-  color: #072a77;
+  color: #5127b8;
   font-size: clamp(16px, 1.1vw, 21px);
   font-weight: 800;
   line-height: 1.18;
