@@ -35,13 +35,46 @@
 
 .hero-media {
   position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 9;
   width: 100%;
+  max-height: 760px;
+  overflow: hidden;
+  background: #d9e8ff;
+  isolation: isolate;
+}
+
+.hero-media::before {
+  position: absolute;
+  z-index: -2;
+  inset: -36px;
+  content: "";
+  background: url("assets/hero-visual-approved.png") center / cover no-repeat;
+  filter: blur(24px) saturate(.9);
+  transform: scale(1.06);
+}
+
+.hero-media::after {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  content: "";
+  background: linear-gradient(90deg,
+    rgba(19, 56, 173, .16),
+    rgba(255, 255, 255, .22) 28%,
+    rgba(255, 255, 255, .22) 72%,
+    rgba(0, 118, 231, .16));
 }
 
 .hero-banner {
-  width: 100%;
-  height: auto;
+  position: relative;
+  z-index: 1;
+  width: auto;
+  max-width: 100%;
+  height: 100%;
   object-fit: contain;
+  box-shadow: 0 0 48px rgba(12, 54, 144, .16);
 }
 
 .hero-event-details {
@@ -395,5 +428,22 @@
 
   .price-card h3 {
     min-height: 0;
+  }
+
+  .hero-media {
+    aspect-ratio: 4 / 3;
+    max-height: none;
+    background: #fff;
+  }
+
+  .hero-media::before,
+  .hero-media::after {
+    display: none;
+  }
+
+  .hero-banner {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
   }
 }
