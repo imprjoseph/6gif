@@ -35,75 +35,16 @@
 
 .hero-media {
   position: relative;
-  display: grid;
-  place-items: center;
-  aspect-ratio: 16 / 9;
   width: 100%;
-  max-height: 760px;
   overflow: hidden;
   background: #d9e8ff;
-  isolation: isolate;
-}
-
-.hero-media::before {
-  position: absolute;
-  z-index: -2;
-  inset: -36px;
-  content: "";
-  background: url("assets/hero-visual-approved.png") center / cover no-repeat;
-  filter: blur(24px) saturate(.9);
-  transform: scale(1.06);
-}
-
-.hero-media::after {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  content: "";
-  background: linear-gradient(90deg,
-    rgba(19, 56, 173, .16),
-    rgba(255, 255, 255, .22) 28%,
-    rgba(255, 255, 255, .22) 72%,
-    rgba(0, 118, 231, .16));
 }
 
 .hero-banner {
-  position: relative;
-  z-index: 1;
-  width: auto;
-  max-width: 100%;
-  height: 100%;
+  display: block;
+  width: 100%;
+  height: auto;
   object-fit: contain;
-  box-shadow: 0 0 48px rgba(12, 54, 144, .16);
-}
-
-.hero-event-details {
-  position: absolute;
-  z-index: 2;
-  top: 61%;
-  left: 50%;
-  display: grid;
-  gap: 4px;
-  width: max-content;
-  max-width: 90%;
-  padding: 10px 24px;
-  transform: translate(-50%, -50%);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, .88);
-  color: #072a77;
-  text-align: center;
-  box-shadow: 0 8px 30px rgba(22, 58, 126, .12);
-}
-
-.hero-event-details strong {
-  font-size: clamp(14px, 1.3vw, 21px);
-  letter-spacing: .14em;
-}
-
-.hero-event-details span {
-  font-size: clamp(10px, .88vw, 14px);
-  font-weight: 800;
-  letter-spacing: .08em;
 }
 
 .banner-actions .pill-pink {
@@ -363,21 +304,6 @@
     box-shadow: 0 18px 35px rgba(7, 27, 111, .14);
   }
 
-  .hero-event-details {
-    top: 61%;
-    gap: 2px;
-    padding: 7px 12px;
-    border-radius: 10px;
-  }
-
-  .hero-event-details strong {
-    font-size: 10px;
-  }
-
-  .hero-event-details span {
-    font-size: 8px;
-  }
-
   .centered-section-title {
     margin-bottom: 34px;
     font-size: 36px;
@@ -436,20 +362,4 @@
     min-height: 0;
   }
 
-  .hero-media {
-    aspect-ratio: 4 / 3;
-    max-height: none;
-    background: #fff;
-  }
-
-  .hero-media::before,
-  .hero-media::after {
-    display: none;
-  }
-
-  .hero-banner {
-    width: 100%;
-    height: auto;
-    box-shadow: none;
-  }
 }
