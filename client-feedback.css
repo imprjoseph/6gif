@@ -50,41 +50,45 @@
 .event-details-strip {
   position: absolute;
   z-index: 2;
-  top: 78%;
-  left: 49%;
+  top: 72%;
+  left: 48%;
   display: grid;
-  gap: 8px;
-  width: min(460px, 24vw);
-  padding: 14px 18px;
+  gap: 4px;
+  width: min(500px, 26vw);
+  padding: 0;
   transform: translate(-50%, -50%);
-  border: 1px solid rgba(7, 42, 119, .14);
-  border-radius: 16px;
-  background: rgba(255, 255, 255, .92);
   color: #072a77;
-  font-size: clamp(16px, 1.15vw, 22px);
+  font-size: clamp(15px, 1.05vw, 20px);
   font-weight: 800;
-  line-height: 1.2;
-  box-shadow: 0 8px 22px rgba(22, 58, 126, .12);
+  line-height: 1.18;
+  text-align: center;
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, .95),
+    0 0 12px rgba(255, 255, 255, .95);
 }
 
 .event-details-strip span {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3px;
-  justify-items: center;
+  display: block;
   width: 100%;
   text-align: center;
 }
 
 .event-details-strip b {
-  color: #293ee2;
-  font-size: .78em;
-  letter-spacing: .1em;
-  text-transform: uppercase;
+  display: none;
 }
 
 .event-details-strip em {
+  display: block;
   font-style: normal;
+}
+
+.event-details-strip span:first-child em {
+  font-size: 1.12em;
+  letter-spacing: .03em;
+}
+
+.event-details-strip span + span {
+  margin-top: 3px;
 }
 
 .banner-actions .pill-pink {
@@ -412,15 +416,27 @@
     background: #f4f7ff;
     font-size: 12px;
     text-align: left;
+    text-shadow: none;
     box-shadow: none;
   }
 
   .event-details-strip span {
+    display: grid;
     grid-template-columns: 58px 1fr;
     gap: 6px;
     width: auto;
     max-width: 360px;
     margin: 0 auto;
+    text-align: left;
+  }
+
+  .event-details-strip b {
+    display: block;
+  }
+
+  .event-details-strip span:first-child em {
+    font-size: inherit;
+    letter-spacing: normal;
   }
 
   .centered-section-title {
