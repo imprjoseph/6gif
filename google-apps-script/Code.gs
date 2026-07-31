@@ -5,16 +5,10 @@ const EVENT_WEBSITE = 'https://imprjoseph.github.io/6gif/';
 const SENDER_EMAIL = 'chengi.joseph@gmail.com';
 const SHEET_PROPERTY = 'REGISTRATION_SHEET_ID';
 
-const PRICES = {
-  member: {
-    'conference-only': 8000,
-    'conference-and-gala': 10000,
-  },
-  'non-member': {
-    'conference-only': 10000,
-    'conference-and-gala': 13000,
-  },
-};
+const EARLY_BIRD_END = '2026-08-31';
+const DISCOUNTED_CONFERENCE_PRICE = 8000;
+const REGULAR_CONFERENCE_PRICE = 10000;
+const GALA_DINNER_PRICE = 3500;
 
 function doGet() {
   return HtmlService.createHtmlOutput(
@@ -32,7 +26,7 @@ function doPost(event) {
     }
 
     const registrationId = createRegistrationId_();
-    const amount = PRICES[data.membership_status][data.registration_option];
+    const amount = calculatePrice_(data);
     const lock = LockService.getScriptLock();
     lock.waitLock(10000);
 
@@ -61,24 +55,7 @@ function setupRegistrationService() {
     const spreadsheet = SpreadsheetApp.create(EVENT_NAME + ' Registrations');
     const sheet = spreadsheet.getSheets()[0];
     sheet.setName('Registrations');
-    sheet.appendRow([
-      'Submitted At',
-      'Registration ID',
-      'Full Name',
-      'Email',
-      'Mobile Number',
-      'Company / Organization',
-      'Job Title',
-      'Country / Region',
-      '6GIF Membership Status',
-      'Registration Option',
-      'Invoice Tax ID',
-      'Invoice Company Name',
-      'Dietary Preference',
-      'Polo Shirt Size',
-      'Subtotal (NT$)',
-      'Privacy Consent',
-    ]);
+    sheet.appendRow(getRegistrationHeaders_());
     sheet.setFrozenRows(1);
     sheet.getRange(1, 1, 1, 16).setFontWeight('bold');
     sheet.autoResizeColumns(1, 16);
@@ -96,8 +73,8 @@ function normalizeRegistration_(parameters) {
     email: clean_(source.email).toLowerCase(),
     phone: clean_(source.phone),
     company: clean_(source.company),
+    department: clean_(source.department),
     title: clean_(source.title),
-    country: clean_(source.country),
     membership_status: clean_(source.membership_status),
     registration_option: clean_(source.registration_option),
     invoice_tax_id: clean_(source.invoice_tax_id),
@@ -115,8 +92,8 @@ function validateRegistration_(data) {
     'email',
     'phone',
     'company',
+    'department',
     'title',
-    'country',
     'membership_status',
     'registration_option',
     'privacy_consent',
@@ -132,8 +109,8 @@ function validateRegistration_(data) {
     throw new Error('Invalid email address.');
   }
 
-  if (!PRICES[data.membership_status] ||
-      !PRICES[data.membership_status][data.registration_option]) {
+  if (['member', 'non-member'].indexOf(data.membership_status) === -1 ||
+      ['conference-only', 'conference-and-gala'].indexOf(data.registration_option) === -1) {
     throw new Error('Invalid registration selection.');
   }
 
@@ -145,6 +122,7 @@ function validateRegistration_(data) {
 function appendRegistration_(registrationId, data, amount) {
   const spreadsheet = getRegistrationSpreadsheet_();
   const sheet = spreadsheet.getSheetByName('Registrations') || spreadsheet.getSheets()[0];
+  ensureRegistrationSheetHeaders_(sheet);
   sheet.appendRow([
     new Date(),
     registrationId,
@@ -152,8 +130,8 @@ function appendRegistration_(registrationId, data, amount) {
     safeSheetValue_(data.email),
     safeSheetValue_(data.phone),
     safeSheetValue_(data.company),
+    safeSheetValue_(data.department),
     safeSheetValue_(data.title),
-    safeSheetValue_(data.country),
     membershipLabel_(data.membership_status),
     optionLabel_(data.registration_option),
     safeSheetValue_(data.invoice_tax_id),
@@ -233,6 +211,8 @@ function registrationTable_(registrationId, data, amount) {
     ['Registration ID', registrationId],
     ['Full Name', data.name],
     ['Company / Organization', data.company],
+    ['Department', data.department],
+    ['6GIF Membership Status', membershipLabel_(data.membership_status)],
     ['Registration Option', optionLabel_(data.registration_option)],
     ['Gala Dinner', data.registration_option === 'conference-and-gala' ? 'Included' : 'Not included'],
     ['Dietary Preference', dietLabel_(data.diet)],
@@ -255,6 +235,45 @@ function getRegistrationSpreadsheet_() {
     throw new Error('Run setupRegistrationService before accepting registrations.');
   }
   return SpreadsheetApp.openById(sheetId);
+}
+
+function getRegistrationHeaders_() {
+  return [
+    'Submitted At',
+    'Registration ID',
+    'Full Name',
+    'Email',
+    'Contact Number',
+    'Company / Organization',
+    'Department',
+    'Job Title',
+    '6GIF Membership Status',
+    'Registration Option',
+    'Invoice Tax ID',
+    'Invoice Company Name',
+    'Dietary Preference',
+    'Polo Shirt Size',
+    'Subtotal (NT$)',
+    'Privacy Consent',
+  ];
+}
+
+function ensureRegistrationSheetHeaders_(sheet) {
+  const headers = getRegistrationHeaders_();
+  sheet.getRange(1, 1, 1, headers.length).setValues([headers]).setFontWeight('bold');
+  sheet.setFrozenRows(1);
+}
+
+function calculatePrice_(data) {
+  const today = Utilities.formatDate(new Date(), 'Asia/Taipei', 'yyyy-MM-dd');
+  const discounted = today <= EARLY_BIRD_END || data.membership_status === 'member';
+  const conferencePrice = discounted
+    ? DISCOUNTED_CONFERENCE_PRICE
+    : REGULAR_CONFERENCE_PRICE;
+  const dinnerPrice = data.registration_option === 'conference-and-gala'
+    ? GALA_DINNER_PRICE
+    : 0;
+  return conferencePrice + dinnerPrice;
 }
 
 function response_(payload) {

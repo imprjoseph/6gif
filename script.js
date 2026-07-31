@@ -34,22 +34,32 @@ function updateSubtotal() {
     return;
   }
 
-  const prices = {
-    member: {
-      "conference-only": 8000,
-      "conference-and-gala": 10000,
-    },
-    "non-member": {
-      "conference-only": 10000,
-      "conference-and-gala": 13000,
-    },
-  };
-  const amount = prices[membership][option];
+  const earlyBird = isEarlyBirdPeriod();
+  const baseAmount = earlyBird || membership === "member" ? 8000 : 10000;
+  const dinnerAmount = option === "conference-and-gala" ? 3500 : 0;
+  const amount = baseAmount + dinnerAmount;
 
   subtotalAmount.textContent = `NT$${amount.toLocaleString("en-US")}`;
-  subtotalNote.textContent = membership === "member"
-    ? "Early-bird 6GIF member rate · valid through 31 August 2026 / 早鳥會員價，有效至 2026 年 8 月 31 日"
-    : "Early-bird regular rate · valid through 31 August 2026 / 早鳥一般價，有效至 2026 年 8 月 31 日";
+  const rateLabel = earlyBird
+    ? "Early-bird rate · valid through 31 August 2026 / 早鳥價，有效至 2026 年 8 月 31 日"
+    : membership === "member"
+      ? "6GIF member rate / 6GIF 會員優惠價"
+      : "Regular rate / 一般定價";
+  const dinnerLabel = dinnerAmount
+    ? " · VIP Gala Dinner add-on NT$3,500 / 晚宴加購 NT$3,500"
+    : " · No Gala Dinner / 不參加晚宴";
+  subtotalNote.textContent = rateLabel + dinnerLabel;
+}
+
+function isEarlyBirdPeriod() {
+  const dateParts = new Intl.DateTimeFormat("en", {
+    timeZone: "Asia/Taipei",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(new Date());
+  const values = Object.fromEntries(dateParts.map((part) => [part.type, part.value]));
+  return `${values.year}-${values.month}-${values.day}` <= "2026-08-31";
 }
 
 membershipSelect?.addEventListener("change", updateSubtotal);
