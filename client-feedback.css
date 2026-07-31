@@ -148,7 +148,9 @@
 
 .partners .centered-section-title {
   color: #11131a;
-  letter-spacing: .06em;
+  font-size: clamp(18px, 4.6vw, 66px);
+  letter-spacing: .04em;
+  white-space: nowrap;
 }
 
 .partner-group {
