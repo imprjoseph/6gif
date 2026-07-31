@@ -42,10 +42,10 @@ function updateSubtotal() {
     : (earlyBird || memberRate ? 8000 : 10000);
 
   subtotalAmount.textContent = `NT$${amount.toLocaleString("en-US")}`;
-  const rateLabel = earlyBird
-    ? "Early-bird rate · valid through 31 August 2026 / 早鳥價，有效至 2026 年 8 月 31 日"
-    : membership === "member"
-      ? "6GIF member rate / 6GIF 會員優惠價"
+  const rateLabel = memberRate
+    ? "6GIF member rate · available at all times / 6GIF 會員優惠價（全期間適用）"
+    : earlyBird
+      ? "Early-bird rate · valid through 31 August 2026 / 早鳥價，有效至 2026 年 8 月 31 日"
       : "Regular rate / 一般定價";
   const dinnerLabel = includesDinner
     ? (earlyBird || memberRate
