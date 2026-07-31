@@ -50,7 +50,7 @@
 .event-details-strip {
   position: absolute;
   z-index: 2;
-  top: 74%;
+  top: 78%;
   left: 49%;
   display: grid;
   gap: 8px;
@@ -69,10 +69,11 @@
 
 .event-details-strip span {
   display: grid;
-  grid-template-columns: 62px 1fr;
-  gap: 8px;
-  align-items: start;
+  grid-template-columns: 1fr;
+  gap: 3px;
+  justify-items: center;
   width: 100%;
+  text-align: center;
 }
 
 .event-details-strip b {
