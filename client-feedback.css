@@ -54,17 +54,22 @@
   left: 48%;
   display: grid;
   gap: 4px;
-  width: min(500px, 26vw);
-  padding: 0;
+  width: min(520px, 26vw);
+  padding: 15px 30px 18px;
   transform: translate(-50%, -50%);
   color: #072a77;
-  font-size: clamp(15px, 1.05vw, 20px);
+  font-size: clamp(16px, 1.1vw, 21px);
   font-weight: 800;
   line-height: 1.18;
   text-align: center;
-  text-shadow:
-    0 1px 0 rgba(255, 255, 255, .95),
-    0 0 12px rgba(255, 255, 255, .95);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, .98) 0%,
+    rgba(246, 250, 255, .92) 45%,
+    rgba(225, 239, 255, .5) 68%,
+    rgba(225, 239, 255, 0) 84%
+  );
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .96);
 }
 
 .event-details-strip span {
