@@ -47,6 +47,41 @@
   object-fit: contain;
 }
 
+.hero-event-details {
+  position: absolute;
+  z-index: 2;
+  top: 59%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  width: max-content;
+  max-width: 86%;
+  padding: 9px 18px;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(7, 42, 119, .14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .84);
+  color: #072a77;
+  font-size: clamp(10px, .78vw, 14px);
+  font-weight: 800;
+  line-height: 1.25;
+  box-shadow: 0 7px 22px rgba(22, 58, 126, .1);
+}
+
+.hero-event-details span {
+  white-space: nowrap;
+}
+
+.hero-event-details b {
+  margin-right: 5px;
+  color: #293ee2;
+  font-size: .82em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
 .banner-actions .pill-pink {
   background: #071b6f;
   color: #fff;
@@ -317,6 +352,22 @@
     background: #fff;
     color: #071b6f;
     box-shadow: 0 18px 35px rgba(7, 27, 111, .14);
+  }
+
+  .hero-event-details {
+    position: static;
+    display: grid;
+    gap: 4px;
+    width: 100%;
+    max-width: none;
+    padding: 10px 16px;
+    transform: none;
+    border-width: 1px 0;
+    border-radius: 0;
+    background: #f4f7ff;
+    font-size: 10px;
+    text-align: center;
+    box-shadow: none;
   }
 
   .centered-section-title {
