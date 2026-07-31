@@ -36,8 +36,9 @@ function updateSubtotal() {
 
   const earlyBird = isEarlyBirdPeriod();
   const baseAmount = earlyBird || membership === "member" ? 8000 : 10000;
-  const dinnerAmount = option === "conference-and-gala" ? 3500 : 0;
-  const amount = baseAmount + dinnerAmount;
+  const includesDinner = option === "conference-and-gala";
+  const specialDinnerPackage = includesDinner && (earlyBird || membership === "member");
+  const amount = specialDinnerPackage ? 10000 : baseAmount + (includesDinner ? 3500 : 0);
 
   subtotalAmount.textContent = `NT$${amount.toLocaleString("en-US")}`;
   const rateLabel = earlyBird
@@ -45,8 +46,10 @@ function updateSubtotal() {
     : membership === "member"
       ? "6GIF member rate / 6GIF 會員優惠價"
       : "Regular rate / 一般定價";
-  const dinnerLabel = dinnerAmount
-    ? " · VIP Gala Dinner add-on NT$3,500 / 晚宴加購 NT$3,500"
+  const dinnerLabel = specialDinnerPackage
+    ? " · Conference + VIP Gala Dinner special total NT$10,000 / 會議及 VIP 晚宴優惠總價 NT$10,000"
+    : includesDinner
+      ? " · VIP Gala Dinner add-on NT$3,500 / 晚宴加購 NT$3,500"
     : " · No Gala Dinner / 不參加晚宴";
   subtotalNote.textContent = rateLabel + dinnerLabel;
 }
