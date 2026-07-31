@@ -48,23 +48,20 @@
 }
 
 .hero-event-details {
-  position: absolute;
-  z-index: 2;
-  top: 61%;
-  left: 50%;
-  display: grid;
-  gap: 7px;
-  width: min(420px, 26vw);
-  padding: 14px 18px;
-  transform: translate(-50%, -50%);
+  position: static;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 36px;
+  width: 100%;
+  padding: 14px 24px;
   border: 1px solid rgba(7, 42, 119, .14);
-  border-radius: 18px;
-  background: rgba(255, 255, 255, .88);
+  border-width: 1px 0;
+  background: #f4f7ff;
   color: #072a77;
-  font-size: clamp(14px, 1.05vw, 20px);
+  font-size: clamp(14px, 1.05vw, 18px);
   font-weight: 800;
   line-height: 1.2;
-  box-shadow: 0 7px 22px rgba(22, 58, 126, .1);
 }
 
 .hero-event-details span {
@@ -72,6 +69,7 @@
   grid-template-columns: 70px 1fr;
   gap: 8px;
   align-items: start;
+  width: min(440px, 42vw);
 }
 
 .hero-event-details b {
@@ -416,6 +414,7 @@
   .hero-event-details span {
     grid-template-columns: 58px 1fr;
     gap: 6px;
+    width: auto;
     max-width: 360px;
     margin: 0 auto;
   }
