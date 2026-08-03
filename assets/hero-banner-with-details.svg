@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="600" viewBox="0 0 1920 600" role="img" aria-labelledby="title desc">
+  <title id="title">2026 6G Summit Taipei</title>
+  <desc id="desc">Event banner with date 23–24 September 2026 and venue TICC Room 201.</desc>
+  <defs>
+    <radialGradient id="mist">
+      <stop offset="0" stop-color="#fff" stop-opacity=".98"/>
+      <stop offset=".58" stop-color="#f3f7ff" stop-opacity=".86"/>
+      <stop offset="1" stop-color="#e5efff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <image href="hero-banner-1920x600-v3.png" x="0" y="0" width="1920" height="600" preserveAspectRatio="xMidYMid slice"/>
+  <ellipse cx="960" cy="360" rx="360" ry="92" fill="url(#mist)"/>
+  <g fill="#5127b8" stroke="#5127b8" stroke-width="3">
+    <g transform="translate(710 324)">
+      <rect x="0" y="6" width="32" height="28" rx="4" fill="none"/>
+      <path d="M0 15h32M8 0v11M24 0v11" fill="none" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(710 374)">
+      <path d="M16 0C7 0 0 7 0 16c0 12 16 30 16 30s16-18 16-30C32 7 25 0 16 0zm0 22a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" stroke="none"/>
+    </g>
+  </g>
+  <g fill="#5127b8" font-family="Arial, Helvetica, sans-serif" font-weight="800">
+    <text x="760" y="353" font-size="27" letter-spacing=".6">23–24 September 2026</text>
+    <text x="760" y="402" font-size="27" letter-spacing=".6">TICC · Room 201</text>
+  </g>
+</svg>
