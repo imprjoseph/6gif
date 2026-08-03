@@ -323,15 +323,15 @@
   min-height: 58px;
   margin: 8px 0 18px;
   color: #7a7f8d;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
 }
 
 .price-card .pass-name {
   color: #11131a;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 900;
-  letter-spacing: .06em;
+  letter-spacing: .045em;
 }
 
 .price-card .pass-description {
