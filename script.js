@@ -125,3 +125,102 @@ window.addEventListener("message", (event) => {
     "Registration could not be completed. Please try again. / 報名未完成，請重新送出。",
   );
 });
+
+const speakerProfiles = {
+  "kentaro-sakata": {
+    name: "Kentaro Sakata",
+    role: "Manager, Global Standardization Section · SoftBank Corp.",
+    paragraphs: [
+      "Since 2015, Mr. Kentaro Sakata has been actively engaged in international standardization activities at ITU-R and APT as a member of the Japanese delegation. He has contributed to spectrum-related discussions for terrestrial systems, including IMT and HAPS/HIBS, and to the development of IMT-2030 (6G) radio interfaces.",
+      "He contributed to the identification of the 700–900 MHz, 1.7–2.1 GHz, and 2.6 GHz frequency bands for HIBS under WRC-23 Agenda Item 1.4. He is also involved in ITU-R WP 5D activities on IMT-2030 minimum technical performance requirements, including “Resilience and Extended Connectivity,” a key element relevant to HAPS/HIBS.",
+    ],
+  },
+  "james-shue": {
+    name: "Dr. James Shue",
+    role: "Senior Vice President & CTO · Pegatron",
+    paragraphs: [
+      "Dr. Shue serves as Senior Vice President and CTO at Pegatron Corporation. He earned his Ph.D. in Electrical Engineering from the University of Florida. Currently, Dr. Shue oversees Pegatron's Research and Technology Center, which acts as a pivotal role in advancing next-generation communication technologies.",
+      "Dr. Shue proactively participates in 5G and 6G events, All-Photonics Network technologies, and Data Center Interconnect (DCI) development. He hopes to cope with the future of global connectivity.",
+    ],
+  },
+  "harald-haas": {
+    name: "Prof. Harald Haas",
+    role: "Van Eck Professor, University of Cambridge · Founder & CSO, pureLiFi Ltd.",
+    paragraphs: [
+      "Professor Harald Haas received his PhD from the University of Edinburgh, UK, in 2001. He is the Van Eck Professor of Engineering at the University of Cambridge, where he leads the LiFi Research and Development Centre (LRDC). He is the Director of the National Future Connectivity Hub on the Network of Networks, TITAN, and the lead co-director of the Federated Telecoms Hub (FTH). He co-founded pureLiFi Ltd and is a member of the Board.",
+      "His research spans photonics, communication theory and signal processing to advance optical wireless communications. He has co-authored over 850 journal and conference papers, with more than 71,000 citations according to Google Scholar, and holds over 50 patents. His two TED talks and one TEDx talk have attracted over 5.7 million views.",
+      "His honours include the Royal Society Wolfson Research Merit Award, the IEEE VTS James Evans Avant Garde Award, and the Humboldt Research Award. He is a co-recipient of the IEEE/VTS Neal Shepherd Memorial Best Propagation Award 2026. Haas is an Ambassador of Friedrich-Alexander University Erlangen–Nürnberg. He is a Fellow of the Royal Academy of Engineering, the Royal Society of Edinburgh and the Institution of Engineering and Technology (IET), all in the UK, as well as a Fellow of the IEEE.",
+    ],
+  },
+  "i-kang-fu": {
+    name: "Dr. I-Kang Fu",
+    role: "Senior Director · MediaTek",
+    paragraphs: [
+      "Dr. I-Kang Fu is the Senior Director of Technology in MediaTek Advanced Communication Technology Division. He leads the R&D teams for research, prototype, and standardization projects of next-generation mobile communication technologies. He also contributes to new technology strategy, partnership and product planning.",
+      "He has spearheaded MediaTek research and development efforts in NTN satellite communication technology, leading the projects from concept to PoC prototype, and system engineering for commercial evaluation. This work culminated to MediaTek’s leadership and contributions to 3GPP Release-17/18/19/20 standardization of NTN technology, where MediaTek also demonstrated several world’s 1st NTN field experiment success over in-orbit GEO and LEO constellations with partners.",
+      "Dr. Fu’s expertise spans wireless technologies such as 4G WiMAX, 4G LTE, and 5G NR. He is currently contributing MediaTek’s commitment to 6G technology research, prototype and standardization, with commercialization expected in the 2030s.",
+      "Dr. Fu joined MediaTek in 2008 after earning his doctorate from National Chiao-Tung University, Taiwan. He has served as Chairman position of TAICS (Taiwan Association of Information and Communication Standards) Advanced Mobile Communication Technical Committee since 2018. He received MediaTek Innovation Award in 2023. He also represents MediaTek to receive Nation Industrial Innovation Award in 2025.",
+    ],
+  },
+  "hyeonwoo-lee": {
+    name: "Prof. HyeonWoo Lee",
+    role: "Vice Chair, 6G Forum · Professor, Dankook University",
+    paragraphs: [
+      "Dr. LEE, Hyeon Woo is a Professor at DanKook University in Korea, a TTA Mobile Standard Committee vice chair, and a 6G forum executive committee vice chair.",
+      "He served as a National R&D Program Director under Ministry of Knowledge Economy of Korea from 2009 until 2013. He was a head of Global Standard & Research Lab. of Samsung Electronics from 1984 until 2009.",
+      "He received BSEE from Seoul National University in 1985, MBA from Sogang University in 1989, ME and Ph.D degree at KAIST in 1994 and 2003 respectively.",
+      "He works on 5G/6G mobile communication, international standards, and R&D strategy planning. He is a member of KICS, IEEE and IEICE.",
+    ],
+  },
+  "pang-an-ting": {
+    name: "Dr. Pang-An Ting",
+    role: "Vice President, ITRI · General Director, ICL, ITRI",
+    paragraphs: [
+      "Pang-An Ting is a Taiwanese electrical engineer and researcher, currently serving as the General Director of Information and Communications Labs (ICL) at the Industrial Technology Research Institute (ITRI) in Hsinchu, Taiwan. He received his B.S. degree from the National Taiwan University of Science and Technology in 1991, followed by an M.S. degree and Ph.D. degree in electrical engineering from the Institute of Electrical Engineering at National Tsing Hua University in 1994 and 2006, respectively. In 2017, he also received an EMBA degree from the National Chiao Tung University.",
+      "Pang-An Ting's research interests include wireless communications, statistical signal processing, and VLSI signal processing. He has been involved in the design of chipsets for various wireless communication standards, such as WiFi, WCDMA, WiMAX, LTE-A, and 5GNR. He is currently leading ITRI's R&D activities related to LTE-A and 5GNR base station technologies, including baseband and protocol stack, as well as 3GPP RAN1/RAN2 standard participation.",
+      "In addition, Pang-An Ting is also the leader of Taiwan's national 6G technology research and development project, further advancing his contributions to the field of wireless communication technology.",
+    ],
+  },
+};
+
+const speakerProfileModal = document.getElementById("speaker-profile-modal");
+const speakerProfileName = document.getElementById("speaker-profile-name");
+const speakerProfileRole = document.getElementById("speaker-profile-role");
+const speakerProfileCopy = document.getElementById("speaker-profile-copy");
+let lastProfileTrigger = null;
+
+function closeSpeakerProfile() {
+  if (!speakerProfileModal) return;
+  speakerProfileModal.hidden = true;
+  document.body.classList.remove("profile-modal-open");
+  lastProfileTrigger?.focus();
+}
+
+document.querySelectorAll("[data-speaker-profile]").forEach((button) => {
+  button.addEventListener("click", () => {
+    const profile = speakerProfiles[button.dataset.speakerProfile];
+    if (!profile || !speakerProfileModal || !speakerProfileName || !speakerProfileRole || !speakerProfileCopy) return;
+
+    lastProfileTrigger = button;
+    speakerProfileName.textContent = profile.name;
+    speakerProfileRole.textContent = profile.role;
+    speakerProfileCopy.replaceChildren(...profile.paragraphs.map((text) => {
+      const paragraph = document.createElement("p");
+      paragraph.textContent = text;
+      return paragraph;
+    }));
+    speakerProfileModal.hidden = false;
+    document.body.classList.add("profile-modal-open");
+    speakerProfileModal.querySelector(".speaker-profile-close")?.focus();
+  });
+});
+
+document.querySelectorAll("[data-close-speaker-profile]").forEach((button) => {
+  button.addEventListener("click", closeSpeakerProfile);
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && speakerProfileModal && !speakerProfileModal.hidden) {
+    closeSpeakerProfile();
+  }
+});
