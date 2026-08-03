@@ -503,3 +503,22 @@
   }
 
 }
+
+/* Client revisions — 3 August 2026 */
+.intro h2 { font-size: clamp(42.667px, calc(6vw - 5.333px), 76.667px); }
+.centered-section-title { font-size: clamp(38.667px, calc(5vw - 5.333px), 66.667px); }
+.partners .centered-section-title { font-size: clamp(24px, calc(4.6vw - 5.333px), 60.667px); }
+.registration-cta h2 { font-size: clamp(34.667px, calc(5vw - 5.333px), 58.667px); }
+.venue-section .venue-grid h2 { font-size: clamp(36.667px, calc(5vw - 5.333px), 62.667px); }
+.registration-hero h1 { font-size: clamp(52.667px, calc(8vw - 5.333px), 99.667px); }
+.category-logos > .logo-rs { background: #07145c; }
+.category-logos > .logo-rs img { filter: grayscale(1) brightness(1.45); }
+.speaker-crop-tight .speaker-visual img { transform: scale(1.07); transform-origin: center 58%; }
+@media (max-width: 700px) {
+  .intro h2, .venue-section .venue-grid h2 { font-size: 38.667px; }
+  .centered-section-title { font-size: 30.667px; }
+  .partners .centered-section-title { font-size: 26px; }
+  .registration-cta h2 { font-size: 32.667px; }
+  .registration-hero h1 { font-size: 52.667px; }
+}
+/* End client revisions — 3 August 2026 */
