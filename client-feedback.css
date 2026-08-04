@@ -564,6 +564,11 @@ body {
   padding-bottom: 28px;
 }
 
+.registration-hero {
+  padding-top: 55px;
+  padding-bottom: 40px;
+}
+
 .category-logos > .logo-rs {
   background: #fff;
 }
@@ -625,6 +630,11 @@ body {
   .registration-hero h1 {
     padding-top: 28px;
     padding-bottom: 28px;
+  }
+
+  .registration-hero {
+    padding-top: 42px;
+    padding-bottom: 32px;
   }
 
   .speaker-order-note {
