@@ -1,5 +1,11 @@
 /* Client review updates — 31 July 2026 */
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .site-header {
   background: #fff;
   color: #071b6f;
@@ -202,16 +208,24 @@
 }
 
 .category-logos > .logo-teema {
-  padding: 8px;
+  padding: 24px;
 }
 
 .logo-teema img {
-  transform: scale(1.08);
+  transform: scale(.84);
   transform-origin: center;
 }
 
 .speaker-section .centered-section-title {
   color: #ffd260;
+}
+
+.speaker-order-note {
+  margin: -30px 0 48px;
+  color: rgba(255, 255, 255, .78);
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .speaker-grid {
@@ -257,6 +271,14 @@
   color: #777b86;
   font-size: 13px;
   text-align: right;
+}
+
+.agenda-meta > span {
+  display: block;
+}
+
+.agenda-meta > span + span {
+  margin-top: 5px;
 }
 
 .registration-cta {
@@ -504,21 +526,101 @@
 
 }
 
-/* Client revisions — 3 August 2026 */
-.intro h2 { font-size: clamp(42.667px, calc(6vw - 5.333px), 76.667px); }
-.centered-section-title { font-size: clamp(38.667px, calc(5vw - 5.333px), 66.667px); }
-.partners .centered-section-title { font-size: clamp(24px, calc(4.6vw - 5.333px), 60.667px); }
-.registration-cta h2 { font-size: clamp(34.667px, calc(5vw - 5.333px), 58.667px); }
-.venue-section .venue-grid h2 { font-size: clamp(36.667px, calc(5vw - 5.333px), 62.667px); }
-.registration-hero h1 { font-size: clamp(52.667px, calc(8vw - 5.333px), 99.667px); }
-.category-logos > .logo-rs { background: #07145c; }
-.category-logos > .logo-rs img { filter: grayscale(1) brightness(1.45); }
-.speaker-crop-tight .speaker-visual img { transform: scale(1.07); transform-origin: center 58%; }
-@media (max-width: 700px) {
-  .intro h2, .venue-section .venue-grid h2 { font-size: 38.667px; }
-  .centered-section-title { font-size: 30.667px; }
-  .partners .centered-section-title { font-size: 26px; }
-  .registration-cta h2 { font-size: 32.667px; }
-  .registration-hero h1 { font-size: 52.667px; }
+/* Client revisions — 4 August 2026 */
+.intro h2,
+.centered-section-title,
+.registration-cta h2,
+.venue-section .venue-grid h2,
+.registration-hero h1 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: .04em;
+  text-align: center;
 }
-/* End client revisions — 3 August 2026 */
+
+.centered-section-title {
+  margin: 0;
+  padding: 45px 0;
+}
+
+.partners .centered-section-title {
+  font-size: 34px;
+}
+
+.registration-cta h2 {
+  margin: 0 auto;
+  padding: 45px 0;
+}
+
+.intro h2,
+.venue-section .venue-grid h2,
+.registration-hero h1 {
+  padding: 45px 0;
+}
+
+.category-logos > .logo-rs {
+  background: #fff;
+}
+
+.category-logos > .logo-rs img {
+  filter: none;
+}
+
+.speaker-crop-tight .speaker-visual img { transform: scale(1.07); transform-origin: center 58%; }
+
+.field.has-error input,
+.field.has-error select {
+  border-color: #c62828;
+  box-shadow: 0 0 0 1px #c62828;
+}
+
+.privacy-box.has-error {
+  outline: 2px solid #c62828;
+}
+
+.field-error {
+  display: block;
+  color: #c62828;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+@media (max-width: 1050px) {
+  .intro h2,
+  .centered-section-title,
+  .partners .centered-section-title,
+  .registration-cta h2,
+  .venue-section .venue-grid h2,
+  .registration-hero h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .intro h2,
+  .centered-section-title,
+  .partners .centered-section-title,
+  .registration-cta h2,
+  .venue-section .venue-grid h2,
+  .registration-hero h1 {
+    font-size: 26px;
+  }
+
+  .centered-section-title,
+  .registration-cta h2,
+  .intro h2,
+  .venue-section .venue-grid h2,
+  .registration-hero h1 {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .speaker-order-note {
+    margin-top: -30px;
+    margin-bottom: 38px;
+    font-size: 13px;
+  }
+}
+/* End client revisions — 4 August 2026 */

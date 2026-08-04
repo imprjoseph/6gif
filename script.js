@@ -82,7 +82,53 @@ function setRegistrationStatus(type, message) {
   registrationStatus.textContent = message;
 }
 
-registrationForm?.addEventListener("submit", () => {
+function clearFieldError(field) {
+  const wrapper = field.closest(".field, .privacy-box");
+  wrapper?.classList.remove("has-error");
+  wrapper?.querySelector(".field-error")?.remove();
+  field.removeAttribute("aria-invalid");
+}
+
+function showFieldError(field) {
+  const wrapper = field.closest(".field, .privacy-box");
+  if (!wrapper) return;
+  clearFieldError(field);
+  wrapper.classList.add("has-error");
+  field.setAttribute("aria-invalid", "true");
+  const message = document.createElement("span");
+  message.className = "field-error";
+  message.textContent = field.validity.valueMissing
+    ? "This field is required / 此欄位為必填"
+    : "Please enter a valid format / 請輸入正確格式";
+  wrapper.append(message);
+}
+
+const validationFields = registrationForm
+  ? [...registrationForm.querySelectorAll("input, select, textarea")].filter((field) => !field.closest(".website-field"))
+  : [];
+
+validationFields.forEach((field) => {
+  field.addEventListener("input", () => {
+    if (field.validity.valid) clearFieldError(field);
+  });
+  field.addEventListener("change", () => {
+    if (field.validity.valid) clearFieldError(field);
+  });
+});
+
+registrationForm?.addEventListener("submit", (event) => {
+  const invalidFields = validationFields.filter((field) => !field.validity.valid);
+  validationFields.forEach((field) => clearFieldError(field));
+
+  if (invalidFields.length) {
+    event.preventDefault();
+    invalidFields.forEach(showFieldError);
+    setRegistrationStatus("error", "Please complete all required fields shown below. / 請完成下方所有必填欄位。");
+    invalidFields[0].focus({ preventScroll: true });
+    invalidFields[0].scrollIntoView({ behavior: "smooth", block: "center" });
+    return;
+  }
+
   submissionPending = true;
   registrationSubmit.disabled = true;
   setRegistrationStatus("pending", "Submitting registration… / 正在送出報名資料…");

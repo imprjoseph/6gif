@@ -7,13 +7,13 @@
   <title>Registration | 2026 6G Summit Taipei</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mobile.css?v=20260729-2">
-  <link rel="stylesheet" href="client-feedback.css?v=20260803-2">
+  <link rel="stylesheet" href="client-feedback.css?v=20260804-1">
 </head>
 <body>
   <header class="site-header">
     <div class="nav-wrap">
-      <a class="site-logo" href="index.html"><img src="assets/6gif-logo.png" alt="6G Industry Forum"></a>
-      <a class="back-link" href="index.html">← BACK TO EVENT WEBSITE</a>
+      <a class="site-logo" href="https://www.6gif-summit.org.tw/" target="_top"><img src="assets/6gif-logo.png" alt="6G Industry Forum"></a>
+      <a class="back-link" href="https://www.6gif-summit.org.tw/" target="_top">← BACK TO EVENT WEBSITE</a>
     </div>
   </header>
   <main>
@@ -38,11 +38,11 @@
             <p>Please complete the bilingual registration form. Fields marked with an asterisk are required.</p>
             <p><b>Registration includes</b><br>Full conference access, lunch and coffee breaks, networking reception, official summit backpack, registration gift and conference badge.</p>
           </aside>
-          <form class="registration-form" id="registration-form" action="https://script.google.com/macros/s/AKfycbyAfncCzzsRgJS-tfvsAJpa2BoVLeGrI8mWv20F7eXdibL5-7mxdHvvtj1o44QVNu1ouw/exec" method="post" target="registration-response">
+          <form class="registration-form" id="registration-form" action="https://script.google.com/macros/s/AKfycbyAfncCzzsRgJS-tfvsAJpa2BoVLeGrI8mWv20F7eXdibL5-7mxdHvvtj1o44QVNu1ouw/exec" method="post" target="registration-response" novalidate>
             <div class="website-field" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
             <div class="field"><label for="name">Full Name / 姓名 *</label><input id="name" name="name" type="text" required autocomplete="name"></div>
             <div class="field"><label for="email">Email Address / 電子郵件 *</label><input id="email" name="email" type="email" required autocomplete="email"></div>
-            <div class="field"><label for="phone">Contact Number / 聯絡電話 *</label><input id="phone" name="phone" type="tel" required autocomplete="tel"></div>
+            <div class="field"><label for="phone">Contact Number / 聯絡電話 *</label><input id="phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" placeholder="e.g. 0988-123-123 / 02-1234-5678#123"></div>
             <div class="field"><label for="company">Company / Organization / 公司或機構 *</label><input id="company" name="company" type="text" required autocomplete="organization"></div>
             <div class="field"><label for="department">Department / 部門 *</label><input id="department" name="department" type="text" required autocomplete="organization"></div>
             <div class="field"><label for="title">Job Title / 職稱 *</label><input id="title" name="title" type="text" required autocomplete="organization-title"></div>
@@ -50,8 +50,8 @@
             <div class="field full"><label for="registration-option">Registration Option / 報名方案 *</label><select id="registration-option" name="registration_option" required><option value="">Please select / 請選擇</option><option value="conference-only">Conference Only (No Gala Dinner) / 僅參加會議（不參加晚宴）</option><option value="conference-and-gala">Conference + VIP Gala Dinner / 會議及 VIP 晚宴</option></select></div>
             <div class="field"><label for="tax-id">Invoice Tax ID / 發票統一編號</label><input id="tax-id" name="invoice_tax_id" type="text" inputmode="numeric" pattern="[0-9]{8}" maxlength="8"></div>
             <div class="field"><label for="invoice-company">Invoice Company Name / 發票公司名稱</label><input id="invoice-company" name="invoice_company_name" type="text"></div>
-            <div class="field"><label for="diet">Dietary Preference / 飲食偏好</label><select id="diet" name="diet"><option value="">Please select / 請選擇</option><option value="regular">Regular / 葷食</option><option value="vegetarian">Vegetarian / 素食</option><option value="no-meal">No Meal / 不用餐</option></select></div>
-            <div class="field"><label for="shirt">Polo Shirt Size / POLO 衫尺寸</label><select id="shirt" name="shirt"><option value="">Please select / 請選擇</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select></div>
+            <div class="field"><label for="diet">Dietary Preference / 飲食偏好 *</label><select id="diet" name="diet" required><option value="">Please select / 請選擇</option><option value="regular">Regular / 葷食</option><option value="vegetarian">Vegetarian / 素食</option><option value="no-meal">No Meal / 不用餐</option></select></div>
+            <div class="field"><label for="shirt">Polo Shirt Size / POLO 衫尺寸 *</label><select id="shirt" name="shirt" required><option value="">Please select / 請選擇</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select></div>
             <div class="subtotal-box" aria-live="polite"><div><span>Estimated Subtotal / 費用小計</span><small id="subtotalNote">Select membership status and registration option / 請選擇會員身分及報名方案</small></div><strong id="subtotalAmount">NT$—</strong></div>
             <label class="privacy-box" id="privacy" for="privacy-consent"><input id="privacy-consent" name="privacy_consent" type="checkbox" value="agreed" required><span><strong>Personal Data Collection and Use Notice / 個人資料蒐集與使用聲明 *</strong><br>I have read and agree to this notice. I consent to the organizer collecting and using my personal data for registration, payment and invoicing, event administration, participant communications, access control and related event services.<br>本人已閱讀並同意本聲明，並同意主辦單位為報名、付款與發票、活動行政、參與者聯繫、進場管理及相關活動服務之目的蒐集及使用本人個人資料。</span></label>
             <div class="submit-row">
@@ -74,6 +74,6 @@
     </section>
   </main>
   <footer class="simple-footer"><div class="container simple-footer-inner"><p>© 2026 6G Summit Taipei. All rights reserved.</p><address><a href="mailto:contact@6gif.org.tw">Email: contact@6gif.org.tw</a><span>Tel: +886-2-23567698#601</span><span>3 F., No. 51, Sec. 2, Chongqing S. Rd., Zhongzheng Dist., Taipei City 100409, Taiwan (R.O.C.)</span></address></div></footer>
-  <script src="script.js?v=20260801-2"></script>
+  <script src="script.js?v=20260804-2"></script>
 </body>
 </html>
