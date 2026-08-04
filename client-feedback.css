@@ -208,11 +208,11 @@ body {
 }
 
 .category-logos > .logo-teema {
-  padding: 24px;
+  padding: 10px;
 }
 
 .logo-teema img {
-  transform: scale(.84);
+  transform: scale(1.04);
   transform-origin: center;
 }
 
