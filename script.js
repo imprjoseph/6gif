@@ -136,15 +136,15 @@ const speakerProfiles = {
     ],
   },
   "james-shue": {
-    name: "Dr. James Shue",
+    name: "James Shue",
     role: "Senior Vice President & CTO · Pegatron",
     paragraphs: [
-      "Dr. Shue serves as Senior Vice President and CTO at Pegatron Corporation. He earned his Ph.D. in Electrical Engineering from the University of Florida. Currently, Dr. Shue oversees Pegatron's Research and Technology Center, which acts as a pivotal role in advancing next-generation communication technologies.",
-      "Dr. Shue proactively participates in 5G and 6G events, All-Photonics Network technologies, and Data Center Interconnect (DCI) development. He hopes to cope with the future of global connectivity.",
+      "James Shue serves as Senior Vice President and CTO at Pegatron Corporation. He earned his Ph.D. in Electrical Engineering from the University of Florida. Currently, James Shue oversees Pegatron's Research and Technology Center, which acts as a pivotal role in advancing next-generation communication technologies.",
+      "James Shue proactively participates in 5G and 6G events, All-Photonics Network technologies, and Data Center Interconnect (DCI) development. He hopes to cope with the future of global connectivity.",
     ],
   },
   "harald-haas": {
-    name: "Prof. Harald Haas",
+    name: "Harald Haas",
     role: "Van Eck Professor, University of Cambridge · Founder & CSO, pureLiFi Ltd.",
     paragraphs: [
       "Professor Harald Haas received his PhD from the University of Edinburgh, UK, in 2001. He is the Van Eck Professor of Engineering at the University of Cambridge, where he leads the LiFi Research and Development Centre (LRDC). He is the Director of the National Future Connectivity Hub on the Network of Networks, TITAN, and the lead co-director of the Federated Telecoms Hub (FTH). He co-founded pureLiFi Ltd and is a member of the Board.",
@@ -153,27 +153,27 @@ const speakerProfiles = {
     ],
   },
   "i-kang-fu": {
-    name: "Dr. I-Kang Fu",
+    name: "I-Kang Fu",
     role: "Senior Director · MediaTek",
     paragraphs: [
-      "Dr. I-Kang Fu is the Senior Director of Technology in MediaTek Advanced Communication Technology Division. He leads the R&D teams for research, prototype, and standardization projects of next-generation mobile communication technologies. He also contributes to new technology strategy, partnership and product planning.",
+      "I-Kang Fu is the Senior Director of Technology in MediaTek Advanced Communication Technology Division. He leads the R&D teams for research, prototype, and standardization projects of next-generation mobile communication technologies. He also contributes to new technology strategy, partnership and product planning.",
       "He has spearheaded MediaTek research and development efforts in NTN satellite communication technology, leading the projects from concept to PoC prototype, and system engineering for commercial evaluation. This work culminated to MediaTek’s leadership and contributions to 3GPP Release-17/18/19/20 standardization of NTN technology, where MediaTek also demonstrated several world’s 1st NTN field experiment success over in-orbit GEO and LEO constellations with partners.",
-      "Dr. Fu’s expertise spans wireless technologies such as 4G WiMAX, 4G LTE, and 5G NR. He is currently contributing MediaTek’s commitment to 6G technology research, prototype and standardization, with commercialization expected in the 2030s.",
-      "Dr. Fu joined MediaTek in 2008 after earning his doctorate from National Chiao-Tung University, Taiwan. He has served as Chairman position of TAICS (Taiwan Association of Information and Communication Standards) Advanced Mobile Communication Technical Committee since 2018. He received MediaTek Innovation Award in 2023. He also represents MediaTek to receive Nation Industrial Innovation Award in 2025.",
+      "I-Kang Fu’s expertise spans wireless technologies such as 4G WiMAX, 4G LTE, and 5G NR. He is currently contributing MediaTek’s commitment to 6G technology research, prototype and standardization, with commercialization expected in the 2030s.",
+      "I-Kang Fu joined MediaTek in 2008 after earning his doctorate from National Chiao-Tung University, Taiwan. He has served as Chairman position of TAICS (Taiwan Association of Information and Communication Standards) Advanced Mobile Communication Technical Committee since 2018. He received MediaTek Innovation Award in 2023. He also represents MediaTek to receive Nation Industrial Innovation Award in 2025.",
     ],
   },
   "hyeonwoo-lee": {
-    name: "Prof. HyeonWoo Lee",
+    name: "HyeonWoo Lee",
     role: "Vice Chair, 6G Forum · Professor, Dankook University",
     paragraphs: [
-      "Dr. LEE, Hyeon Woo is a Professor at DanKook University in Korea, a TTA Mobile Standard Committee vice chair, and a 6G forum executive committee vice chair.",
+      "LEE, Hyeon Woo is a Professor at DanKook University in Korea, a TTA Mobile Standard Committee vice chair, and a 6G forum executive committee vice chair.",
       "He served as a National R&D Program Director under Ministry of Knowledge Economy of Korea from 2009 until 2013. He was a head of Global Standard & Research Lab. of Samsung Electronics from 1984 until 2009.",
       "He received BSEE from Seoul National University in 1985, MBA from Sogang University in 1989, ME and Ph.D degree at KAIST in 1994 and 2003 respectively.",
       "He works on 5G/6G mobile communication, international standards, and R&D strategy planning. He is a member of KICS, IEEE and IEICE.",
     ],
   },
   "pang-an-ting": {
-    name: "Dr. Pang-An Ting",
+    name: "Pang-An Ting",
     role: "Vice President, ITRI · General Director, ICL, ITRI",
     paragraphs: [
       "Pang-An Ting is a Taiwanese electrical engineer and researcher, currently serving as the General Director of Information and Communications Labs (ICL) at the Industrial Technology Research Institute (ITRI) in Hsinchu, Taiwan. He received his B.S. degree from the National Taiwan University of Science and Technology in 1991, followed by an M.S. degree and Ph.D. degree in electrical engineering from the Institute of Electrical Engineering at National Tsing Hua University in 1994 and 2006, respectively. In 2017, he also received an EMBA degree from the National Chiao Tung University.",
