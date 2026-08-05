@@ -173,6 +173,22 @@ window.addEventListener("message", (event) => {
 });
 
 const speakerProfiles = {
+  "sarah-skaluba": {
+    name: "Sarah Skaluba",
+    role: "6G Policy Lead, Office of Policy and International Affairs · NTIA",
+    paragraphs: [
+      "Sarah Skaluba serves at the National Telecommunications and Information Administration, supporting telecommunications policy matters spanning 5G, Open RAN, the Public Wireless Supply Chain Innovation Fund, and the First Responder Network Authority. She previously led policy development for the Innovation Fund’s US$1.5 billion grant program.",
+      "Before joining the U.S. Department of Commerce, she advised public- and private-sector clients on telecommunications issues at Access Partnership and worked on digital policy at BSA | The Software Alliance. She holds a B.A. in International Studies from the University of Michigan and an M.A. in East Asian Politics and Security from Georgetown University’s Walsh School of Foreign Service.",
+    ],
+  },
+  "abhumanyu-gosain": {
+    name: "Abhumanyu Gosain",
+    role: "Senior Technical Advisor · US Department of Defense Research and Engineering FutureG Office",
+    paragraphs: [
+      "Abhumanyu (Manu) Gosain is a Senior Director at Northeastern University’s Institute for the Wireless Internet of Things and a senior advisor supporting NTIA and the U.S. Department of Defense OUSD R&E FutureG program. His work focuses on strategy and research for advanced wireless platforms and the transition from 5G to 6G.",
+      "He has helped guide the NSF Platforms for Advanced Wireless Research program and DARPA’s Colosseum wireless network emulator. His professional activities span open and interoperable networks, O-RAN, AI and machine learning, edge computing, and the Internet of Things. He is an IEEE Senior Member and holds an M.S. from Tufts University and an M.B.A. from Boston University.",
+    ],
+  },
   "kentaro-sakata": {
     name: "Kentaro Sakata",
     role: "Manager, Global Standardization Section · SoftBank Corp.",
