@@ -665,6 +665,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 28px;
+}
+
+.registration-cta h2 {
+  margin: 0 auto;
+  padding: 0;
 }
 
 .venue-section .venue-grid h2,
@@ -715,6 +721,7 @@ body {
 @media (max-width: 700px) {
   .registration-cta .container {
     min-height: 350px;
+    gap: 22px;
   }
 
   .gift-image-frame {
