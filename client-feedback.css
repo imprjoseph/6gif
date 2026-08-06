@@ -677,14 +677,58 @@ body {
   padding-bottom: 20px;
 }
 
+.registration-hero .container,
+.registration-hero .section-label,
+.registration-hero h1,
+.registration-hero p {
+  text-align: left;
+}
+
 .gift-card img {
   border-radius: 2px;
   background: #fff;
 }
 
+.gift-image-frame {
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.gift-image-frame img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  object-fit: initial;
+}
+
+.gift-image-backpack img {
+  transform: translateY(-23px);
+}
+
+.gift-image-polo img {
+  transform: translateY(-3px);
+}
+
 @media (max-width: 700px) {
   .registration-cta .container {
     min-height: 350px;
+  }
+
+  .gift-image-frame {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+  }
+
+  .gift-image-backpack img {
+    transform: translateY(-28px);
+  }
+
+  .gift-image-polo img {
+    transform: translateY(-4px);
   }
 
   .venue-section .venue-grid h2,

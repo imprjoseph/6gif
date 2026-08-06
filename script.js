@@ -175,18 +175,18 @@ window.addEventListener("message", (event) => {
 const speakerProfiles = {
   "sarah-skaluba": {
     name: "Sarah Skaluba",
-    role: "6G Policy Lead, Office of Policy and International Affairs · NTIA",
+    role: "6G Policy Lead in the Office of Policy and International Affairs · NTIA",
     paragraphs: [
-      "Sarah Skaluba serves at the National Telecommunications and Information Administration, supporting telecommunications policy matters spanning 5G, Open RAN, the Public Wireless Supply Chain Innovation Fund, and the First Responder Network Authority. She previously led policy development for the Innovation Fund’s US$1.5 billion grant program.",
-      "Before joining the U.S. Department of Commerce, she advised public- and private-sector clients on telecommunications issues at Access Partnership and worked on digital policy at BSA | The Software Alliance. She holds a B.A. in International Studies from the University of Michigan and an M.A. in East Asian Politics and Security from Georgetown University’s Walsh School of Foreign Service.",
+      "Sarah Skaluba serves as the 6G Policy Lead in the Office of Policy and International Affairs, Analysis and Development at NTIA. In this capacity, she is focused on advancing NTIA’s Mission 6G initiative, as well as developing and executing NTIA’s broader 6G strategy. She previously served as Special Policy Advisor detailed to the Office of the Assistant Secretary, where she supported policy matters spanning 5G and Open RAN, the Public Wireless Supply Chain Innovation Fund, and the First Responder Network Authority. From 2022 through 2024, she served as Policy Director for the Innovation Fund, where she led policy development for the US$1.5 billion grant program.",
+      "Prior to joining the Department of Commerce, Sarah advised public- and private-sector clients on telecommunications issues as a manager with Access Partnership and advanced a range of digital policies as a Policy Associate with BSA | The Software Alliance. Sarah holds a B.A. in International Studies from the University of Michigan and an M.A. from the Walsh School of Foreign Service at Georgetown. In her free time, she loves to sail in Annapolis and run with Achilles International.",
     ],
   },
   "abhumanyu-gosain": {
     name: "Abhumanyu Gosain",
     role: "Senior Technical Advisor · US Department of Defense Research and Engineering FutureG Office",
     paragraphs: [
-      "Abhumanyu (Manu) Gosain is a Senior Director at Northeastern University’s Institute for the Wireless Internet of Things and a senior advisor supporting NTIA and the U.S. Department of Defense OUSD R&E FutureG program. His work focuses on strategy and research for advanced wireless platforms and the transition from 5G to 6G.",
-      "He has helped guide the NSF Platforms for Advanced Wireless Research program and DARPA’s Colosseum wireless network emulator. His professional activities span open and interoperable networks, O-RAN, AI and machine learning, edge computing, and the Internet of Things. He is an IEEE Senior Member and holds an M.S. from Tufts University and an M.B.A. from Boston University.",
+      "Abhumanyu Gosain is a Senior Technical Advisor for the U.S. Department of Defense Research and Engineering FutureG Office. He is also a Senior Director for the Institute for Intelligent Networked Systems at Northeastern University, co-Chair of the U.S. FCC 6G Technology Advisory Council, a member of the FCC World Radiocommunication Conference Advisory Committee, and a Senior Advisor for the NTIA Innovation Fund.",
+      "He is the Co-PI for the NSF NRDZ EEL program, POSE Open6G and Colosseum program. He is a founding member of the Magma Core Foundation and a university representative to the O-RAN Alliance, AI-RAN Alliance and Next G Alliance. He serves on international project and organizing committees including Japan XGMF, SLICES-EU, OpenRIT6G, 6G Symposium, EuCNC, IEEE INFOCOM, IEEE GLOBECOM and ACM WinTech. He is a U.S. government 3GPP and ITU-R delegate and an IEEE Senior Member. His publications and experience span 5G, 6G, AI and machine learning, edge computing, and the Internet of Things.",
     ],
   },
   "kentaro-sakata": {
@@ -241,6 +241,14 @@ const speakerProfiles = {
       "Pang-An Ting is a Taiwanese electrical engineer and researcher, currently serving as the General Director of Information and Communications Labs (ICL) at the Industrial Technology Research Institute (ITRI) in Hsinchu, Taiwan. He received his B.S. degree from the National Taiwan University of Science and Technology in 1991, followed by an M.S. degree and Ph.D. degree in electrical engineering from the Institute of Electrical Engineering at National Tsing Hua University in 1994 and 2006, respectively. In 2017, he also received an EMBA degree from the National Chiao Tung University.",
       "Pang-An Ting's research interests include wireless communications, statistical signal processing, and VLSI signal processing. He has been involved in the design of chipsets for various wireless communication standards, such as WiFi, WCDMA, WiMAX, LTE-A, and 5GNR. He is currently leading ITRI's R&D activities related to LTE-A and 5GNR base station technologies, including baseband and protocol stack, as well as 3GPP RAN1/RAN2 standard participation.",
       "In addition, Pang-An Ting is also the leader of Taiwan's national 6G technology research and development project, further advancing his contributions to the field of wireless communication technology.",
+    ],
+  },
+  "hungyu-wei": {
+    name: "Hungyu Wei",
+    role: "Professor · National Taiwan University",
+    paragraphs: [
+      "Hungyu Wei is a Professor in the Department of Electrical Engineering and Graduate Institute of Communications Engineering at National Taiwan University, where he serves as Director of the Graduate Institute of Communications Engineering. He served as Associate Department Chair and Interim Department Chair from 2019 to 2022.",
+      "He received his B.S. degree in electrical engineering from National Taiwan University and his M.S. and Ph.D. degrees in electrical engineering from Columbia University. He joined National Taiwan University in 2005. His research interests include next-generation wireless networks, the Internet of Things, and fog and edge computing. He is the Chair of the IEEE 1935 working group for the edge and fog management and orchestration standard.",
     ],
   },
 };
