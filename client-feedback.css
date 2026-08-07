@@ -671,7 +671,7 @@ body {
 .registration-cta h2 {
   margin: 0 auto;
   padding: 0;
-  transform: translateY(-0.2em);
+  transform: translateY(-0.5em);
 }
 
 .venue-section .venue-grid h2,
