@@ -181,6 +181,42 @@ const speakerProfiles = {
       "Prior to joining the Department of Commerce, Sarah advised public- and private-sector clients on telecommunications issues as a manager with Access Partnership and advanced a range of digital policies as a Policy Associate with BSA | The Software Alliance. Sarah holds a B.A. in International Studies from the University of Michigan and an M.A. from the Walsh School of Foreign Service at Georgetown. In her free time, she loves to sail in Annapolis and run with Achilles International.",
     ],
   },
+  "mitch-tseng": {
+    name: "Mitch Tseng",
+    role: "Chair, International Partnership Group · 6GIF",
+    paragraphs: [
+      "Dr. Mitch Tseng is a Research Consultant of ITRI. He is a veteran in the international standards community for wireless communications, noted for helping end the separation of 3G wireless technologies and reunite the industry in 4G through his work on CDMA–LTE interworking in 3GPP in 2009.",
+      "In addition to wireless standards, Mitch has been an active contributor and leader in Industrial IoT organizations such as the Industrial Internet Consortium, focusing on industrial automation and helping initiate work on digital twins. He serves as Vice Chair of the Market & Applications Working Group in the Next G Alliance, helping the industry migrate toward 6G through applications and services. He is also active in 5G-ACIA and ISO TC 204 for intelligent transportation systems.",
+      "Mitch received his M.S. and Ph.D. degrees in Electrical Engineering from the University of Texas at Dallas.",
+    ],
+  },
+  "reiner-stuhlfauth": {
+    name: "Reiner Stuhlfauth",
+    role: "Technology Manager Wireless · Rohde & Schwarz",
+    paragraphs: [
+      "Reiner Stuhlfauth is Technology Manager Wireless in the Test & Measurement Division of Rohde & Schwarz in Munich. Previously a trainer, he has more than 20 years of experience teaching and promoting mobile communication technologies across cellular standards and non-cellular technologies. He is involved in projects concerning 5G, 5G-Advanced and 6G research activities.",
+      "His current areas of interest include non-terrestrial networks, O-RAN, cybersecurity, energy saving and non-3GPP interworking. Reiner has presented at numerous conferences and events and published technical documents and webinars. He is also one of the authors of the Rohde & Schwarz technology book “5G New Radio – Fundamentals, Procedures, Testing Aspects.”",
+      "He holds an engineering degree in telecommunications from the Technical University of Kaiserslautern.",
+    ],
+  },
+  "antonio-de-la-oliva": {
+    name: "Antonio de la Oliva",
+    role: "Associate Professor · Universidad Carlos III de Madrid",
+    paragraphs: [
+      "Antonio de la Oliva is an Associate Professor in the Department of Telematics Engineering at Universidad Carlos III de Madrid, where his research focuses on 5G and 6G networks, integrated sensing and communication, and next-generation network architectures.",
+      "His international standardization work includes serving as Vice-Chair of IEEE 802.21b and IEEE 802.11bi, Technical Editor of IEEE 802.21d, and contributing to IEEE 802.11 work on ISAC and AI offloading. He chairs the SNS Joint Undertaking ISAC Policy Working Group, coordinating activities across participating ISAC projects.",
+      "He has led large European consortia including MultiX, PREDICT-6G, 5G-CORAL and 5G-DIVE. The latter two joint EU–Taiwan 5G-PPP projects focused on edge intelligence for vertical industries and helped establish him as a bridge between the regions’ innovation ecosystems. He is Madrid Node Leader for SLICES and Chairperson of its Interim Supervisory Board.",
+    ],
+  },
+  "dave-lu": {
+    name: "Dave Lu",
+    role: "Vice President · Far EasTone",
+    paragraphs: [
+      "Dave Lu is Vice President of Far EasTone Telecommunications. Since joining the company in 1997, he has built his career within its Network and Technology organization, contributing to the evolution of mobile communications from 2G through 5G. With nearly three decades of telecommunications experience, he has led network planning, operations, technology development and large-scale infrastructure transformation initiatives.",
+      "His expertise spans mobile and fixed core networks, IP networks, network management systems, transmission networks and telecommunications infrastructure. Under his leadership, Far EasTone completed major network modernization programs, including migration of legacy mobile network facilities to a next-generation telecommunications campus and deployment of Taiwan’s first AI-based customer experience management analytics platform.",
+      "More recently, he supported completion of the Asia Pacific Telecom network integration and introduction of Amazon low Earth orbit satellite communication services in Taiwan. He currently leads Regional Operations and Emerging Network Product Development, driving intelligent network evolution, automation and future connectivity innovation.",
+    ],
+  },
   "abhumanyu-gosain": {
     name: "Abhumanyu Gosain",
     role: "Senior Technical Advisor · US Department of Defense Research and Engineering FutureG Office",

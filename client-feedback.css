@@ -53,6 +53,17 @@ body {
   object-fit: contain;
 }
 
+.speaker-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #eaf2ff, #cbdcff);
+  color: #173a91;
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
 .event-details-strip {
   position: absolute;
   z-index: 2;
