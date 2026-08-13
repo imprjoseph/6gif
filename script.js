@@ -233,6 +233,22 @@ const speakerProfiles = {
       "He contributed to the identification of the 700–900 MHz, 1.7–2.1 GHz, and 2.6 GHz frequency bands for HIBS under WRC-23 Agenda Item 1.4. He is also involved in ITU-R WP 5D activities on IMT-2030 minimum technical performance requirements, including “Resilience and Extended Connectivity,” a key element relevant to HAPS/HIBS.",
     ],
   },
+  "haibin-zhang": {
+    name: "Haibin Zhang",
+    role: "Professor · TNO Netherlands",
+    paragraphs: [
+      "Haibin Zhang is a senior scientist and strategist at TNO, responsible for research as well as technical and strategic consultancy related to 5G and 6G wireless technology, 5G and 6G for verticals, and sustainable networks. He is also a part-time Professor at Eindhoven University of Technology, a visiting professor at National Taiwan University, and an elected Fellow of the IET.",
+      "With nearly 30 years of R&D experience in wireless communications, he has contributed to the development of 3G, 4G, 5G and 6G technologies, covering areas from physical-layer signal processing and error-correction coding to radio network architecture and resource management. His current research focuses on designing and developing next-generation flexible, robust and intelligent wireless network technologies, particularly AI-native wireless network architecture and management.",
+    ],
+  },
+  "kimi-imamura": {
+    name: "Kimi Imamura",
+    role: "Executive Vice President · Sharp Laboratories of America",
+    paragraphs: [
+      "Kimihiko “Kimi” Imamura, Vice President at Sharp, is leading the Satellite User Terminal Development Project at the company.",
+      "He previously served as Executive Vice President of Sharp Laboratories of America, based in Vancouver, Washington. He has a long career in wireless communication standardization and also has academic experience as a Professor at Osaka University.",
+    ],
+  },
   "james-shue": {
     name: "James Shue",
     role: "Senior Vice President & CTO · Pegatron",

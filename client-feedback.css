@@ -718,16 +718,17 @@ body {
   display: block;
   width: 100%;
   max-width: none;
-  height: auto;
-  object-fit: initial;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .gift-image-backpack img {
-  transform: translateY(-23px);
+  transform: none;
 }
 
 .gift-image-polo img {
-  transform: translateY(-3px);
+  transform: none;
 }
 
 @media (max-width: 700px) {
@@ -743,11 +744,11 @@ body {
   }
 
   .gift-image-backpack img {
-    transform: translateY(-28px);
+    transform: none;
   }
 
   .gift-image-polo img {
-    transform: translateY(-4px);
+    transform: none;
   }
 
   .venue-section .venue-grid h2,
