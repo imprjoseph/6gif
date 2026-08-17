@@ -269,6 +269,35 @@ body {
   font-size: 18px;
 }
 
+.speaker-name-button {
+  appearance: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: rgba(236, 22, 140, .42);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+.speaker-name-button:hover,
+.speaker-name-button:focus-visible {
+  color: #ec168c;
+  text-decoration-color: currentColor;
+}
+
+.speaker-name-button:focus-visible {
+  outline: 2px solid #ec168c;
+  outline-offset: 4px;
+}
+
 .speaker-grid p {
   font-size: 13px;
 }
