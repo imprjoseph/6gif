@@ -173,6 +173,16 @@ window.addEventListener("message", (event) => {
 });
 
 const speakerProfiles = {
+  "thibaut-kleiner": {
+    name: "Thibaut Kleiner",
+    role: "Director for Future Networks · European Commission, DG Connect",
+    paragraphs: [],
+  },
+  "erzsebet-fitori": {
+    name: "Erzsébet Fitori",
+    role: "Executive Director · SNS JU",
+    paragraphs: [],
+  },
   "sarah-skaluba": {
     name: "Sarah Skaluba",
     role: "6G Policy Lead in the Office of Policy and International Affairs · NTIA",
@@ -180,6 +190,19 @@ const speakerProfiles = {
       "Sarah Skaluba serves as the 6G Policy Lead in the Office of Policy and International Affairs, Analysis and Development at NTIA. In this capacity, she is focused on advancing NTIA’s Mission 6G initiative, as well as developing and executing NTIA’s broader 6G strategy. She previously served as Special Policy Advisor detailed to the Office of the Assistant Secretary, where she supported policy matters spanning 5G and Open RAN, the Public Wireless Supply Chain Innovation Fund, and the First Responder Network Authority. From 2022 through 2024, she served as Policy Director for the Innovation Fund, where she led policy development for the US$1.5 billion grant program.",
       "Prior to joining the Department of Commerce, Sarah advised public- and private-sector clients on telecommunications issues as a manager with Access Partnership and advanced a range of digital policies as a Policy Associate with BSA | The Software Alliance. Sarah holds a B.A. in International Studies from the University of Michigan and an M.A. from the Walsh School of Foreign Service at Georgetown. In her free time, she loves to sail in Annapolis and run with Achilles International.",
     ],
+  },
+  "chiung-jang-chen": {
+    name: "Chiung-Jang Chen",
+    role: "Managing Director · Chunghwa Telecom",
+    paragraphs: [
+      "Dr. Chiung-Jang Chen is the Managing Director of the Wireless Communication Lab at Chunghwa Telecom, leading R&D in emerging end-to-end mobile infrastructure technologies, including Radio Access, Core Networks, Network Management, and Network AI. He actively contributes to global industry initiatives such as NGMN, 3GPP, and the O-RAN ALLIANCE.",
+      "Dr. Chen holds a Ph.D. in Communication Engineering from National Chiao Tung University, Taiwan. His contributions have been recognized with several prestigious honors, including the CIE Distinguished Engineer Award (2024), the IEEE Taipei Section Best Impact Award (2010), and the CIEE Outstanding Young Electrical Engineer Award (2006). He has authored or co-authored over 20 patent filings and more than 30 research papers.",
+    ],
+  },
+  "akihiro-nakao": {
+    name: "Akihiro Nakao",
+    role: "Chair · XGMF",
+    paragraphs: [],
   },
   "mitch-tseng": {
     name: "Mitch Tseng",
@@ -241,6 +264,11 @@ const speakerProfiles = {
       "With nearly 30 years of R&D experience in wireless communications, he has contributed to the development of 3G, 4G, 5G and 6G technologies, covering areas from physical-layer signal processing and error-correction coding to radio network architecture and resource management. His current research focuses on designing and developing next-generation flexible, robust and intelligent wireless network technologies, particularly AI-native wireless network architecture and management.",
     ],
   },
+  "alessandro-vanelli-coralli": {
+    name: "Alessandro Vanelli-Coralli",
+    role: "Professor · Università di Bologna",
+    paragraphs: [],
+  },
   "kimi-imamura": {
     name: "Kimi Imamura",
     role: "Executive Vice President · Sharp Laboratories of America",
@@ -256,6 +284,11 @@ const speakerProfiles = {
       "James Shue serves as Senior Vice President and CTO at Pegatron Corporation. He earned his Ph.D. in Electrical Engineering from the University of Florida. Currently, James Shue oversees Pegatron's Research and Technology Center, which acts as a pivotal role in advancing next-generation communication technologies.",
       "James Shue proactively participates in 5G and 6G events, All-Photonics Network technologies, and Data Center Interconnect (DCI) development. He hopes to cope with the future of global connectivity.",
     ],
+  },
+  "mingxi-fan": {
+    name: "Mingxi Fan",
+    role: "Vice President · MediaTek",
+    paragraphs: [],
   },
   "harald-haas": {
     name: "Harald Haas",
@@ -302,6 +335,16 @@ const speakerProfiles = {
       "Hungyu Wei is a Professor in the Department of Electrical Engineering and Graduate Institute of Communications Engineering at National Taiwan University, where he serves as Director of the Graduate Institute of Communications Engineering. He served as Associate Department Chair and Interim Department Chair from 2019 to 2022.",
       "He received his B.S. degree in electrical engineering from National Taiwan University and his M.S. and Ph.D. degrees in electrical engineering from Columbia University. He joined National Taiwan University in 2005. His research interests include next-generation wireless networks, the Internet of Things, and fog and edge computing. He is the Chair of the IEEE 1935 working group for the edge and fog management and orchestration standard.",
     ],
+  },
+  "emilio-calvanese-strinati": {
+    name: "Emilio Calvanese Strinati",
+    role: "Director · CEA-Leti",
+    paragraphs: [],
+  },
+  "norman-chen": {
+    name: "Norman Chen",
+    role: "Senior Director · Compal",
+    paragraphs: [],
   },
 };
 
