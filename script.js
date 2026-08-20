@@ -240,13 +240,15 @@ const speakerProfiles = {
       "More recently, he supported completion of the Asia Pacific Telecom network integration and introduction of Amazon low Earth orbit satellite communication services in Taiwan. He currently leads Regional Operations and Emerging Network Product Development, driving intelligent network evolution, automation and future connectivity innovation.",
     ],
   },
-  "abhumanyu-gosain": {
-    name: "Abhumanyu Gosain",
-    role: "Senior Technical Advisor · US Department of Defense Research and Engineering FutureG Office",
-    paragraphs: [
-      "Abhumanyu Gosain is a Senior Technical Advisor for the U.S. Department of Defense Research and Engineering FutureG Office. He is also a Senior Director for the Institute for Intelligent Networked Systems at Northeastern University, co-Chair of the U.S. FCC 6G Technology Advisory Council, a member of the FCC World Radiocommunication Conference Advisory Committee, and a Senior Advisor for the NTIA Innovation Fund.",
-      "He is the Co-PI for the NSF NRDZ EEL program, POSE Open6G and Colosseum program. He is a founding member of the Magma Core Foundation and a university representative to the O-RAN Alliance, AI-RAN Alliance and Next G Alliance. He serves on international project and organizing committees including Japan XGMF, SLICES-EU, OpenRIT6G, 6G Symposium, EuCNC, IEEE INFOCOM, IEEE GLOBECOM and ACM WinTech. He is a U.S. government 3GPP and ITU-R delegate and an IEEE Senior Member. His publications and experience span 5G, 6G, AI and machine learning, edge computing, and the Internet of Things.",
-    ],
+  "daniel-kilper": {
+    name: "Daniel Kilper",
+    role: "Professor of Trinity College Dublin · Director of CONNECT Centre",
+    paragraphs: [],
+  },
+  "yiannis-argyropoulos": {
+    name: "Yiannis Argyropoulos",
+    role: "Technical leader · OUSD FutureG",
+    paragraphs: [],
   },
   "kentaro-sakata": {
     name: "Kentaro Sakata",
