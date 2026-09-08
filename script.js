@@ -223,7 +223,7 @@ const speakerProfiles = {
     ],
   },
   "antonio-de-la-oliva": {
-    name: "Antonio de la Oliva",
+    name: "Antonio De La Oliva",
     role: "Associate Professor · Universidad Carlos III de Madrid",
     paragraphs: [
       "Antonio de la Oliva is an Associate Professor in the Department of Telematics Engineering at Universidad Carlos III de Madrid, where his research focuses on 5G and 6G networks, integrated sensing and communication, and next-generation network architectures.",
@@ -272,7 +272,7 @@ const speakerProfiles = {
     paragraphs: [],
   },
   "kimi-imamura": {
-    name: "Kimi Imamura",
+    name: "Kimi (Kimihiko) Imamura",
     role: "Executive Vice President · Sharp Laboratories of America",
     paragraphs: [
       "Kimihiko “Kimi” Imamura, Vice President at Sharp, is leading the Satellite User Terminal Development Project at the company.",
@@ -331,8 +331,8 @@ const speakerProfiles = {
     ],
   },
   "hungyu-wei": {
-    name: "Hungyu Wei",
-    role: "Professor · National Taiwan University",
+    name: "Hung-Yu Wei",
+    role: "Director & Distinguished Professor · National Taiwan University",
     paragraphs: [
       "Hungyu Wei is a Professor in the Department of Electrical Engineering and Graduate Institute of Communications Engineering at National Taiwan University, where he serves as Director of the Graduate Institute of Communications Engineering. He served as Associate Department Chair and Interim Department Chair from 2019 to 2022.",
       "He received his B.S. degree in electrical engineering from National Taiwan University and his M.S. and Ph.D. degrees in electrical engineering from Columbia University. He joined National Taiwan University in 2005. His research interests include next-generation wireless networks, the Internet of Things, and fog and edge computing. He is the Chair of the IEEE 1935 working group for the edge and fog management and orchestration standard.",
