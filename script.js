@@ -201,7 +201,7 @@ const speakerProfiles = {
   },
   "akihiro-nakao": {
     name: "Akihiro Nakao",
-    role: "Chair · XGMF",
+    role: "XGMF Chair / Professor, The University of Tokyo",
     paragraphs: [],
   },
   "mitch-tseng": {
